@@ -2,6 +2,11 @@ name: Collect and publish Agent Daily
 
 on:
   workflow_dispatch:
+    inputs:
+      check_ai:
+        description: Verify the configured model with one budgeted API call
+        type: boolean
+        default: false
   schedule:
     - cron: '15 0 * * *'
   push:
@@ -53,7 +58,11 @@ jobs:
           AI_MODEL: ${{ vars.AI_MODEL }}
           AI_INPUT_CNY_PER_MILLION: ${{ vars.AI_INPUT_CNY_PER_MILLION }}
           AI_OUTPUT_CNY_PER_MILLION: ${{ vars.AI_OUTPUT_CNY_PER_MILLION }}
-        run: python scripts/collect.py --max-items 80
+          AI_CHECK: ${{ inputs.check_ai || 'false' }}
+        run: |
+          args=()
+          if [ "$AI_CHECK" = "true" ]; then args+=(--check-ai); fi
+          python scripts/collect.py --max-items 80 "${args[@]}"
       - name: Persist feed and budget ledger
         if: always() && steps.collect.outcome != 'skipped' && steps.tests.outcome == 'success'
         env:

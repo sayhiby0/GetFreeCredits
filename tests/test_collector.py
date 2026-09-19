@@ -1,6 +1,8 @@
 import importlib.util
 import json
 import os
+import subprocess
+import sys
 import tempfile
 import unittest
 from datetime import datetime, timedelta, timezone
@@ -173,6 +175,33 @@ class BudgetTests(unittest.TestCase):
             self.assertIsNone(summarizer.summarize('新闻标题', ['这里是一条真实的官方中文消息内容。']))
             self.assertEqual(summarizer.budget.spent, 0)
 
+    def test_qwen_non_thinking_json_request(self):
+        env = {'AI_ENABLED': 'true', 'AI_API_KEY': 'test-only-not-a-secret', 'AI_MODEL': 'qwen3.7-flash', 'AI_BASE_URL': 'https://example.com/v1', 'AI_INPUT_CNY_PER_MILLION': '0.2', 'AI_OUTPUT_CNY_PER_MILLION': '0.8'}
+        summary = ['新增文档管理能力，支持项目协作。']
+        envelope = {'choices': [{'message': {'content': json.dumps({'summary': summary})}}]}
+        with patch.dict(os.environ, env, clear=True), patch.object(c, 'validate_url'), patch.object(c, 'build_opener') as opener:
+            opener.return_value.open.return_value.__enter__.return_value.read.return_value = json.dumps(envelope).encode()
+            summarizer = c.Summarizer(c.Budget(self.path, NOW))
+            self.assertEqual(summarizer.summarize('更新', summary), summary)
+            request = opener.return_value.open.call_args.args[0]
+            payload = json.loads(request.data)
+            self.assertEqual(payload['model'], 'qwen3.7-flash')
+            self.assertIs(payload['enable_thinking'], False)
+            self.assertEqual(payload['max_tokens'], 800)
+            self.assertEqual(payload['response_format'], {'type': 'json_object'})
+            self.assertNotIn(env['AI_API_KEY'], request.data.decode())
+            expected = (len(request.data) * 0.2 + 800 * 0.8) / 1_000_000
+            self.assertAlmostEqual(c.Budget(self.path, NOW).spent, expected, places=8)
+
+    def test_qwen_budget_guard_prevents_request(self):
+        env = {'AI_ENABLED': 'true', 'AI_API_KEY': 'test-only-not-a-secret', 'AI_MODEL': 'qwen3.7-flash', 'AI_BASE_URL': 'https://example.com/v1', 'AI_INPUT_CNY_PER_MILLION': '0.2', 'AI_OUTPUT_CNY_PER_MILLION': '0.8'}
+        budget = c.Budget(self.path, NOW)
+        budget.reserve(25)
+        with patch.dict(os.environ, env, clear=True), patch.object(c, 'validate_url'), patch.object(c, 'build_opener') as opener:
+            self.assertIsNone(c.Summarizer(budget).summarize('更新', ['新增文档管理能力，支持项目协作。']))
+            opener.assert_not_called()
+            self.assertEqual(c.Budget(self.path, NOW).spent, 25)
+
     def test_failed_call_keeps_reservation(self):
         env = {'AI_ENABLED': 'true', 'AI_API_KEY': 'test-only-not-a-secret', 'AI_MODEL': 'test-model', 'AI_BASE_URL': 'https://example.com/v1', 'AI_INPUT_CNY_PER_MILLION': '1', 'AI_OUTPUT_CNY_PER_MILLION': '1'}
         with patch.dict(os.environ, env, clear=True), patch.object(c, 'validate_url'), patch.object(c, 'build_opener') as opener:
@@ -180,6 +209,24 @@ class BudgetTests(unittest.TestCase):
             summarizer = c.Summarizer(c.Budget(self.path, NOW))
             self.assertIsNone(summarizer.summarize('更新', ['新增文件管理能力，支持跨项目协作。']))
             self.assertGreater(c.Budget(self.path, NOW).spent, 0)
+
+    def test_http_failure_logs_only_status(self):
+        env = {'AI_ENABLED': 'true', 'AI_API_KEY': 'test-only-not-a-secret', 'AI_MODEL': 'qwen3.7-flash', 'AI_BASE_URL': 'https://example.com/v1', 'AI_INPUT_CNY_PER_MILLION': '0.2', 'AI_OUTPUT_CNY_PER_MILLION': '0.8'}
+        with patch.dict(os.environ, env, clear=True), patch.object(c, 'validate_url'), patch.object(c, 'build_opener') as opener, patch('builtins.print') as output:
+            opener.return_value.open.side_effect = c.HTTPError('https://example.com/v1/chat/completions', 401, env['AI_API_KEY'], {}, None)
+            summarizer = c.Summarizer(c.Budget(self.path, NOW))
+            self.assertIsNone(summarizer.summarize('更新', ['新增文档管理能力，支持项目协作。']))
+            output.assert_called_once_with('AI request failed: HTTP 401; using source excerpts.')
+            self.assertGreater(c.Budget(self.path, NOW).spent, 0)
+
+    def test_ai_check_disabled_does_not_write_or_collect(self):
+        feed = self.path.parent / 'feed.json'
+        result = subprocess.run([sys.executable, str(Path(c.__file__)), '--check-ai', '--state', str(self.path), '--output', str(feed)],
+                                env={**os.environ, 'AI_ENABLED': 'false'}, capture_output=True, text=True, timeout=10)
+        self.assertEqual(result.returncode, 2)
+        self.assertIn('AI verification requires', result.stderr)
+        self.assertFalse(self.path.exists())
+        self.assertFalse(feed.exists())
 
 
 class CollectionTests(unittest.TestCase):
