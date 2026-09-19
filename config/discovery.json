@@ -1,0 +1,45 @@
+{
+  "comment": "Deterministic new-page discovery. Each entry is an official sitemap (indexes are followed automatically). include/exclude are regular expressions matched against the canonical URL. Only anonymous, robots-permitted fetches of the sitemap itself happen; candidate pages are listed, never scraped or judged. Tunable to control noise.",
+  "sitemaps": [
+    {
+      "brand": "千问办公",
+      "productId": "qwenwork",
+      "url": "https://qwenwork.cn/sitemap.xml",
+      "hosts": ["qwenwork.cn", "www.qwenwork.cn"],
+      "include": ["^https://qwenwork\\.cn/docs/(benefits|activity|activities|events?|promo|promotion|whats-new|changelog|release-notes)(/|$)"],
+      "exclude": ["/docs/developer/"]
+    },
+    {
+      "brand": "WorkBuddy",
+      "productId": "workbuddy",
+      "url": "https://www.workbuddy.cn/sitemap.xml",
+      "hosts": ["www.workbuddy.cn", "workbuddy.cn"],
+      "include": ["^https://www\\.workbuddy\\.cn/(blog|changelog|pricing|skills|templates|use-cases|agents|download|benefits?|activities?|events?|promo)(/|$)"],
+      "exclude": ["^https://www\\.workbuddy\\.cn/(privacy|terms|about|careers)(/|$)"]
+    },
+    {
+      "brand": "WorkBuddy",
+      "productId": "workbuddy",
+      "url": "https://www.workbuddy.cn/docs/sitemap.xml",
+      "hosts": ["www.workbuddy.cn", "workbuddy.cn"],
+      "include": ["/(changelog|release-notes|whats-new|updates?|quickstart|getting-started|benefits?|activities?|guide)"],
+      "exclude": ["/api/"]
+    },
+    {
+      "brand": "Qoder",
+      "productId": "qoder",
+      "url": "https://qoder.com/sitemap.xml",
+      "hosts": ["qoder.com", "www.qoder.com"],
+      "include": ["^https://qoder\\.com/(blog|changelog|events?|release-notes|whats-new)(/|$)"],
+      "exclude": ["^https://qoder\\.com/(en|ja|ko|zh|zh-hant|fr|de|es|pt|ru|ar)(/|$)"]
+    },
+    {
+      "brand": "Claude",
+      "productId": "claude",
+      "url": "https://www.anthropic.com/sitemap.xml",
+      "hosts": ["www.anthropic.com", "anthropic.com"],
+      "include": ["^https://www\\.anthropic\\.com/(events?|engineering|research|news)(/|$)"],
+      "exclude": ["^https://www\\.anthropic\\.com/news/.+", "/legal/", "/careers", "/authors?/"]
+    }
+  ]
+}
