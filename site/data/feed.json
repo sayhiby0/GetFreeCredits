@@ -1,8 +1,74 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-17T17:18:19+00:00",
-  "lastSuccessfulCollectionAt": "2026-09-17T17:18:19+00:00",
+  "generatedAt": "2026-09-19T17:38:55+00:00",
+  "lastSuccessfulCollectionAt": "2026-09-19T17:38:55+00:00",
   "items": [
+    {
+      "id": "42d55bb93da403ede2b6",
+      "productId": "qoder",
+      "categories": [
+        "benefits"
+      ],
+      "title": "每日领取 100 Credits",
+      "summary": [
+        "领取时间 ：每日 10:00 开放新一轮领取，领取窗口持续至次日 10:00 前。",
+        "领取规则 ：每个账号每轮限领一次，每次 100 通用 Credits，需主动领取。错过领取窗口不可补领，未领取的额度不累计至下一轮。",
+        "领取渠道 ：仅限 Qoder 桌面端。"
+      ],
+      "url": "https://docs.qoder.com/zh/events/100credits",
+      "sourceId": "qoder-events",
+      "region": "international",
+      "publishedAt": null,
+      "firstSeenAt": "2026-09-19T17:38:55+00:00",
+      "updatedAt": "2026-09-19T17:38:55+00:00",
+      "summaryMethod": "extractive",
+      "benefit": {
+        "startAt": "2026-09-18T10:00:00+08:00",
+        "endAt": null,
+        "deadlineText": "开始时间 ：2026 年 9 月 18 日 10:00。",
+        "ongoing": false,
+        "eligibility": "适用用户 ：Qoder 国际版新老个人用户，包括体验版（免费）、Pro 试用期、Pro、Pro+ 和 Ultra 用户。团队版（Teams）及企业版（Enterprise）订阅用户不适用。",
+        "howToClaim": "查看官方原文",
+        "limited": false,
+        "startPrecision": "minute",
+        "endPrecision": null,
+        "timezone": "Asia/Singapore"
+      },
+      "contentHash": "c57b439cd0383c7c931b5e2a34078308c1defec3e1a18cc12300a44e06484956"
+    },
+    {
+      "id": "6c2b4656953efb5d29bb",
+      "productId": "qoder",
+      "categories": [
+        "benefits"
+      ],
+      "title": "Qwen3.8-Flash 限时免费使用",
+      "summary": [
+        "活动时间 ：2026 年 9 月 18 日 10:00 至 9 月 30 日 23:59:59。",
+        "生效方式 ：自动生效，无需领取。账号 Credits 余额为 0 时也可使用。",
+        "适用用户 ：Qoder 国际版新老个人用户，包括体验版（免费）、Pro 试用期、Pro、Pro+ 和 Ultra 用户。团队版（Teams）及企业版（Enterprise）订阅用户不适用。"
+      ],
+      "url": "https://docs.qoder.com/zh/events/flashoffer",
+      "sourceId": "qoder-events",
+      "region": "international",
+      "publishedAt": null,
+      "firstSeenAt": "2026-09-19T17:38:55+00:00",
+      "updatedAt": "2026-09-19T17:38:55+00:00",
+      "summaryMethod": "extractive",
+      "benefit": {
+        "startAt": "2026-09-18T10:00:00+08:00",
+        "endAt": "2026-09-30T23:59:00+08:00",
+        "deadlineText": "活动时间 ：2026 年 9 月 18 日 10:00 至 9 月 30 日 23:59:59。",
+        "ongoing": false,
+        "eligibility": "适用用户 ：Qoder 国际版新老个人用户，包括体验版（免费）、Pro 试用期、Pro、Pro+ 和 Ultra 用户。团队版（Teams）及企业版（Enterprise）订阅用户不适用。",
+        "howToClaim": "生效方式 ：自动生效，无需领取。账号 Credits 余额为 0 时也可使用。",
+        "limited": false,
+        "startPrecision": "minute",
+        "endPrecision": "minute",
+        "timezone": "Asia/Singapore"
+      },
+      "contentHash": "05f6b916fd434eab1a5297cde4b1f8579669897f61aedfd68e9e6a941dff1684"
+    },
     {
       "id": "aa53214e084a68232051",
       "productId": "qoder",
@@ -75,7 +141,7 @@
       "categories": [
         "benefits"
       ],
-      "title": "「经济」(Efficient) 模型档位开放免费使用",
+      "title": "「经济」(Efficient) 模型档位限时免费",
       "summary": [
         "生效方式 ：自动生效。无需领取，无需任何设置。打开模型选择器，选「经济」即可",
         "开始时间 ：2026 年 9 月 3 日 14:00（新加坡时间）",
@@ -86,7 +152,7 @@
       "region": "international",
       "publishedAt": null,
       "firstSeenAt": "2026-09-17T16:52:14+00:00",
-      "updatedAt": "2026-09-17T17:08:15+00:00",
+      "updatedAt": "2026-09-19T17:38:55+00:00",
       "summaryMethod": "extractive",
       "benefit": {
         "startAt": "2026-09-03T14:00:00+08:00",
@@ -100,7 +166,7 @@
         "endPrecision": null,
         "timezone": "Asia/Singapore"
       },
-      "contentHash": "004959fa4f50c7f7141d9099dd50573573b6b4f88e676ff97779b73752d28a2b"
+      "contentHash": "252e730ee12f38866d6714ed6d0ed8dbbd3358266cf9c031dcffde7b4f5e0c6e"
     },
     {
       "id": "8f6a3b03c00aed3d9a9a",
@@ -119,7 +185,7 @@
       "region": "international",
       "publishedAt": null,
       "firstSeenAt": "2026-09-17T16:52:14+00:00",
-      "updatedAt": "2026-09-17T17:08:15+00:00",
+      "updatedAt": "2026-09-19T17:38:55+00:00",
       "summaryMethod": "extractive",
       "benefit": {
         "startAt": null,
@@ -133,7 +199,7 @@
         "endPrecision": null,
         "timezone": null
       },
-      "contentHash": "c99432ed84181e7f7d68dc6703974c6802bed9ef917e375ab764d11517033fa9"
+      "contentHash": "4a8d69da56fe743c9627389241f3ff4925e75763920b2d65e70f8d204e2e2eed"
     },
     {
       "id": "bd9a70c098039423ca0e",
@@ -246,6 +312,50 @@
       "summaryMethod": "extractive",
       "benefit": null,
       "contentHash": "9e382d0010b7a0c7f34a6d3fee8a068f019aebbd972990a967ae3b82730d44f1"
+    },
+    {
+      "id": "ba821d7d842e317098f0",
+      "productId": "qoder",
+      "categories": [
+        "updates"
+      ],
+      "title": "Qoder 0.3.3",
+      "summary": [
+        "Sites 建站 ：支持选择模板，通过对话创建网站，并在桌面端内预览、发布和管理站点。",
+        "PPT 创建与编辑 ：支持在桌面端内打开工作区中的 PPTX 文件，直接编辑并保存，可在扩展-插件市场下载PPT插件获得更好的体验。",
+        "电脑操控 ：升级至 Computer Use 2.0，带来更流畅的使用体验，并支持 Linux 系统。在设置-电脑操作中开启后即可体验。"
+      ],
+      "url": "https://docs.qoder.com/zh/release-notes/qoder#2026-09-18",
+      "sourceId": "qoder-updates",
+      "region": "international",
+      "publishedAt": "2026-09-18",
+      "firstSeenAt": "2026-09-19T17:38:55+00:00",
+      "updatedAt": "2026-09-19T17:38:55+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "c30119e1b510474f801670a4cbe6189ff4590d91d5d92eeba2b473d8ddf9f497"
+    },
+    {
+      "id": "53745c28f0be80340c53",
+      "productId": "qwenwork",
+      "categories": [
+        "updates"
+      ],
+      "title": "千问办公 1.1.0",
+      "summary": [
+        "侧边栏支持任务、定时任务组、项目的统一拖拽、折叠与排序，会话组织更灵活。",
+        "个人技能支持发布到公开市场，可管理审核状态、更新版本、撤回或下架。",
+        "扫码创建钉钉机器人时自动匹配当前钉钉组织，无需手动切换。"
+      ],
+      "url": "https://docs.qwenwork.cn/release-notes/desktop#2026-09-18",
+      "sourceId": "qwenwork-updates",
+      "region": "cn",
+      "publishedAt": "2026-09-18",
+      "firstSeenAt": "2026-09-19T17:38:55+00:00",
+      "updatedAt": "2026-09-19T17:38:55+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "2e03ddbe966d4ddbd5a732155f6e8d78b650f5c4802f95b5ddf71d4be9abab6e"
     },
     {
       "id": "d290c9493fdfc6d44983",
@@ -814,7 +924,7 @@
       "region": "international",
       "publishedAt": "2026-08-27",
       "firstSeenAt": "2026-09-17T16:52:14+00:00",
-      "updatedAt": "2026-09-17T17:18:19+00:00",
+      "updatedAt": "2026-09-19T17:38:55+00:00",
       "summaryMethod": "extractive",
       "benefit": null,
       "contentHash": "a85a10f650f3fafaedbe8c2eb8686f3083e305eb806acbd71f9248007592a137"
@@ -969,11 +1079,11 @@
       "name": "Qoder 国际版 · 更新日志",
       "kind": "website",
       "url": "https://docs.qoder.com/zh/release-notes/qoder",
-      "checkedAt": "2026-09-17T17:18:19+00:00",
-      "lastSuccessAt": "2026-09-17T17:18:19+00:00",
-      "itemCount": 11,
+      "checkedAt": "2026-09-19T17:38:55+00:00",
+      "lastSuccessAt": "2026-09-19T17:38:55+00:00",
+      "itemCount": 12,
       "status": "ok",
-      "message": "本轮检查 11 条，匹配 11 条。"
+      "message": "本轮检查 12 条，匹配 12 条。"
     },
     {
       "id": "qoder-events",
@@ -981,11 +1091,11 @@
       "name": "Qoder 国际版 · 官方活动",
       "kind": "website",
       "url": "https://docs.qoder.com/zh/events/bogo",
-      "checkedAt": "2026-09-17T17:18:19+00:00",
-      "lastSuccessAt": "2026-09-17T17:18:19+00:00",
-      "itemCount": 6,
+      "checkedAt": "2026-09-19T17:38:55+00:00",
+      "lastSuccessAt": "2026-09-19T17:38:55+00:00",
+      "itemCount": 8,
       "status": "ok",
-      "message": "本轮检查 6 条，匹配 6 条。"
+      "message": "本轮检查 8 条，匹配 8 条。"
     },
     {
       "id": "qwenwork-updates",
@@ -993,11 +1103,11 @@
       "name": "千问办公 · 更新日志",
       "kind": "website",
       "url": "https://docs.qwenwork.cn/release-notes/desktop",
-      "checkedAt": "2026-09-17T17:18:19+00:00",
-      "lastSuccessAt": "2026-09-17T17:18:19+00:00",
-      "itemCount": 7,
+      "checkedAt": "2026-09-19T17:38:55+00:00",
+      "lastSuccessAt": "2026-09-19T17:38:55+00:00",
+      "itemCount": 8,
       "status": "ok",
-      "message": "本轮检查 7 条，匹配 7 条。"
+      "message": "本轮检查 8 条，匹配 8 条。"
     },
     {
       "id": "qwenwork-guide",
@@ -1005,8 +1115,8 @@
       "name": "千问办公 · 使用指南",
       "kind": "website",
       "url": "https://qwenwork.cn/docs/getting-started/basic-workflow",
-      "checkedAt": "2026-09-17T17:18:19+00:00",
-      "lastSuccessAt": "2026-09-17T17:18:19+00:00",
+      "checkedAt": "2026-09-19T17:38:55+00:00",
+      "lastSuccessAt": "2026-09-19T17:38:55+00:00",
       "itemCount": 1,
       "status": "ok",
       "message": "本轮检查 1 条，匹配 1 条。"
@@ -1017,8 +1127,8 @@
       "name": "WorkBuddy · 更新日志",
       "kind": "website",
       "url": "https://www.workbuddy.cn/docs/workbuddy/Changelog",
-      "checkedAt": "2026-09-17T17:18:19+00:00",
-      "lastSuccessAt": "2026-09-17T17:18:19+00:00",
+      "checkedAt": "2026-09-19T17:38:55+00:00",
+      "lastSuccessAt": "2026-09-19T17:38:55+00:00",
       "itemCount": 14,
       "status": "ok",
       "message": "本轮检查 25 条，匹配 14 条。"
@@ -1029,8 +1139,8 @@
       "name": "WorkBuddy · 快速开始",
       "kind": "website",
       "url": "https://www.workbuddy.cn/docs/workbuddy/Quickstart",
-      "checkedAt": "2026-09-17T17:18:19+00:00",
-      "lastSuccessAt": "2026-09-17T17:18:19+00:00",
+      "checkedAt": "2026-09-19T17:38:55+00:00",
+      "lastSuccessAt": "2026-09-19T17:38:55+00:00",
       "itemCount": 0,
       "status": "ok",
       "message": "本轮检查 1 条，匹配 0 条。"
@@ -1041,8 +1151,8 @@
       "name": "豆包工作 · 官方帮助中心",
       "kind": "website",
       "url": "https://www.doubao.com/work/docs/zh-cn/articles/095732655658-about-doubao-work",
-      "checkedAt": "2026-09-17T17:18:19+00:00",
-      "lastSuccessAt": "2026-09-17T17:18:19+00:00",
+      "checkedAt": "2026-09-19T17:38:55+00:00",
+      "lastSuccessAt": "2026-09-19T17:38:55+00:00",
       "itemCount": 1,
       "status": "ok",
       "message": "本轮检查 1 条，匹配 1 条。"
@@ -1053,8 +1163,8 @@
       "name": "飞书官方 · 豆包工作介绍",
       "kind": "website",
       "url": "https://www.feishu.cn/content/article/7677519271848610746",
-      "checkedAt": "2026-09-17T17:18:19+00:00",
-      "lastSuccessAt": "2026-09-17T17:18:19+00:00",
+      "checkedAt": "2026-09-19T17:38:55+00:00",
+      "lastSuccessAt": "2026-09-19T17:38:55+00:00",
       "itemCount": 1,
       "status": "ok",
       "message": "本轮检查 1 条，匹配 1 条。"
@@ -1065,7 +1175,7 @@
       "name": "Qoder · 小红书",
       "kind": "xiaohongshu",
       "url": "https://xhslink.com/m/210eULoS2jT",
-      "checkedAt": "2026-09-17T17:18:19+00:00",
+      "checkedAt": "2026-09-19T17:38:55+00:00",
       "lastSuccessAt": null,
       "itemCount": 0,
       "status": "restricted",
@@ -1077,7 +1187,7 @@
       "name": "腾讯WorkBuddy · 小红书",
       "kind": "xiaohongshu",
       "url": "https://www.xiaohongshu.com/user/profile/69b82bc0000000003202c526",
-      "checkedAt": "2026-09-17T17:18:19+00:00",
+      "checkedAt": "2026-09-19T17:38:55+00:00",
       "lastSuccessAt": null,
       "itemCount": 0,
       "status": "restricted",
@@ -1089,7 +1199,7 @@
       "name": "豆包工作 · 小红书",
       "kind": "xiaohongshu",
       "url": "https://www.xiaohongshu.com/user/profile/6805d023000000000a03fa77",
-      "checkedAt": "2026-09-17T17:18:19+00:00",
+      "checkedAt": "2026-09-19T17:38:55+00:00",
       "lastSuccessAt": null,
       "itemCount": 0,
       "status": "restricted",
@@ -1101,7 +1211,7 @@
       "name": "千问办公 · 小红书",
       "kind": "xiaohongshu",
       "url": "https://www.xiaohongshu.com/user/profile/611dc5fd0000000001006906",
-      "checkedAt": "2026-09-17T17:18:19+00:00",
+      "checkedAt": "2026-09-19T17:38:55+00:00",
       "lastSuccessAt": null,
       "itemCount": 0,
       "status": "restricted",
@@ -1113,7 +1223,7 @@
       "name": "Qoder · 微信公众号",
       "kind": "wechat",
       "url": "https://qoder.com.cn/",
-      "checkedAt": "2026-09-17T17:18:19+00:00",
+      "checkedAt": "2026-09-19T17:38:55+00:00",
       "lastSuccessAt": null,
       "itemCount": 0,
       "status": "unconfigured",
@@ -1125,7 +1235,7 @@
       "name": "WorkBuddy · 微信公众号",
       "kind": "wechat",
       "url": "https://www.workbuddy.cn/docs/workbuddy/Contact",
-      "checkedAt": "2026-09-17T17:18:19+00:00",
+      "checkedAt": "2026-09-19T17:38:55+00:00",
       "lastSuccessAt": null,
       "itemCount": 0,
       "status": "unconfigured",
@@ -1137,7 +1247,7 @@
       "name": "千问办公 · 微信公众号",
       "kind": "wechat",
       "url": null,
-      "checkedAt": "2026-09-17T17:18:19+00:00",
+      "checkedAt": "2026-09-19T17:38:55+00:00",
       "lastSuccessAt": null,
       "itemCount": 0,
       "status": "unconfigured",
@@ -1149,7 +1259,7 @@
       "name": "豆包工作 · 微信公众号",
       "kind": "wechat",
       "url": null,
-      "checkedAt": "2026-09-17T17:18:19+00:00",
+      "checkedAt": "2026-09-19T17:38:55+00:00",
       "lastSuccessAt": null,
       "itemCount": 0,
       "status": "unconfigured",
@@ -1157,8 +1267,8 @@
     }
   ],
   "run": {
-    "newCount": 1,
-    "updatedCount": 2,
+    "newCount": 4,
+    "updatedCount": 4,
     "budget": {
       "limitCny": 30.0,
       "guardCny": 25.0,
