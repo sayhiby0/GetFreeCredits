@@ -6,6 +6,7 @@ import sys
 import tempfile
 import unittest
 from datetime import datetime, timedelta, timezone
+from io import BytesIO
 from pathlib import Path
 from unittest.mock import patch
 
@@ -218,6 +219,17 @@ class BudgetTests(unittest.TestCase):
             self.assertIsNone(summarizer.summarize('更新', ['新增文档管理能力，支持项目协作。']))
             output.assert_called_once_with('AI request failed: HTTP 401; using source excerpts.')
             self.assertGreater(c.Budget(self.path, NOW).spent, 0)
+
+    def test_provider_error_details_are_allowlisted(self):
+        env = {'AI_ENABLED': 'true', 'AI_API_KEY': 'test-only-not-a-secret', 'AI_MODEL': 'qwen3.7-flash', 'AI_BASE_URL': 'https://example.com/v1', 'AI_INPUT_CNY_PER_MILLION': '0.2', 'AI_OUTPUT_CNY_PER_MILLION': '0.8'}
+        for code, detail in [('AccessDenied.Unpurchased', ' (AccessDenied.Unpurchased)'), ('AllocationQuota.FreeTierOnly', ' (AllocationQuota.FreeTierOnly)'), (env['AI_API_KEY'], ''), (['unexpected'], '')]:
+            with self.subTest(code=code), patch.dict(os.environ, env, clear=True), patch.object(c, 'validate_url'), patch.object(c, 'build_opener') as opener, patch('builtins.print') as output:
+                body = BytesIO(json.dumps({'error': {'code': code, 'message': env['AI_API_KEY']}}).encode())
+                opener.return_value.open.side_effect = c.HTTPError('https://example.com/v1/chat/completions', 403, env['AI_API_KEY'], {}, body)
+                summarizer = c.Summarizer(c.Budget(self.path, NOW))
+                self.assertIsNone(summarizer.summarize('更新', ['新增文档管理能力，支持项目协作。']))
+                output.assert_called_once_with(f'AI request failed: HTTP 403{detail}; using source excerpts.')
+                self.assertTrue(body.closed)
 
     def test_ai_check_disabled_does_not_write_or_collect(self):
         feed = self.path.parent / 'feed.json'

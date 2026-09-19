@@ -541,8 +541,17 @@ class Summarizer:
             self.used = True
             return summary
         except HTTPError as error:
-            error.close()
-            print(f'AI request failed: HTTP {error.code}; using source excerpts.')
+            detail = ''
+            with error:
+                try:
+                    body = json.loads(error.read(8192))
+                    info = body.get('error', body) if isinstance(body, dict) else {}
+                    code = info.get('code') if isinstance(info, dict) else None
+                    if isinstance(code, str) and code in {'AccessDenied', 'AccessDenied.Unpurchased', 'AccessDeniedException', 'AllocationQuota.FreeTierOnly', 'AccessDenied.ApiKey', 'AccessDenied.Model', 'InvalidApiKey', 'Arrearage', 'ModelNotFound', 'model_not_found'}:
+                        detail = f' ({code})'
+                except (ValueError, OSError):
+                    pass
+            print(f'AI request failed: HTTP {error.code}{detail}; using source excerpts.')
             return None
         except (URLError, TimeoutError, ValueError, KeyError, IndexError, TypeError, OSError) as error:
             print(f'AI request failed: {type(error).__name__}; using source excerpts.')

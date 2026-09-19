@@ -52,7 +52,7 @@ jobs:
       - name: Collect public sources
         id: collect
         env:
-          AI_ENABLED: ${{ vars.AI_ENABLED || 'false' }}
+          AI_ENABLED: ${{ inputs.check_ai && 'true' || vars.AI_ENABLED || 'false' }}
           AI_API_KEY: ${{ secrets.APIKEY_GETFREECREDITS }}
           AI_BASE_URL: ${{ vars.AI_BASE_URL }}
           AI_MODEL: ${{ vars.AI_MODEL }}
