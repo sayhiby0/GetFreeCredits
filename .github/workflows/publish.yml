@@ -48,7 +48,7 @@ jobs:
         id: collect
         env:
           AI_ENABLED: ${{ vars.AI_ENABLED || 'false' }}
-          AI_API_KEY: ${{ secrets.AI_API_KEY }}
+          AI_API_KEY: ${{ secrets.APIKEY_GETFREECREDITS }}
           AI_BASE_URL: ${{ vars.AI_BASE_URL }}
           AI_MODEL: ${{ vars.AI_MODEL }}
           AI_INPUT_CNY_PER_MILLION: ${{ vars.AI_INPUT_CNY_PER_MILLION }}
