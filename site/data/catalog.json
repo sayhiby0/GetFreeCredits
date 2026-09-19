@@ -1,0 +1,15 @@
+{
+  "site": {"name": "Agent 资讯站", "brand": "Agent Daily", "timezone": "Asia/Shanghai", "schedule": "每日 08:15", "description": "少一点信息噪音，多一点值得关注。"},
+  "products": [
+    {"id": "qoder", "name": "Qoder", "short": "Q", "color": "#17836b", "homepage": "https://qoder.com/zh", "description": "国际版优先"},
+    {"id": "qwenwork", "name": "千问办公", "short": "千", "color": "#7959c5", "homepage": "https://qwenwork.cn/", "description": "QwenWork"},
+    {"id": "workbuddy", "name": "WorkBuddy", "short": "W", "color": "#467ad2", "homepage": "https://www.workbuddy.cn/", "description": "腾讯 AI 工作台"},
+    {"id": "doubao", "name": "豆包工作", "short": "豆", "color": "#db8b46", "homepage": "https://www.doubao.com/work", "description": "AI 办公助手"}
+  ],
+  "categories": [
+    {"id": "benefits", "name": "福利追踪", "description": "每一份值得领取的权益", "icon": "gift"},
+    {"id": "updates", "name": "产品与技术", "description": "功能、版本与模型的新变化", "icon": "spark"},
+    {"id": "practice", "name": "最佳实践", "description": "让好工具真正用起来", "icon": "book"},
+    {"id": "other", "name": "其他资讯", "description": "还有这些值得关注", "icon": "more"}
+  ]
+}

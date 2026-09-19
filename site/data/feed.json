@@ -1,0 +1,1169 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-17T17:18:19+00:00",
+  "lastSuccessfulCollectionAt": "2026-09-17T17:18:19+00:00",
+  "items": [
+    {
+      "id": "aa53214e084a68232051",
+      "productId": "qoder",
+      "categories": [
+        "benefits"
+      ],
+      "title": "9 月开通 Pro / Pro+，首月 Credits 翻倍，续费加赠 1,000",
+      "summary": [
+        "首次下单，Pro / Pro+ 加赠等额 Credits ：Pro 首月 4,000 / Pro+ 12,000。",
+        "续费、升级加赠 ：9 月续费或升级加赠 1,000 Credits，适用于 Pro、Pro+、Ultra",
+        "付款成功后几分钟内，加赠自动到账。到用量页查看 Credits 余额和到期时间"
+      ],
+      "url": "https://docs.qoder.com/zh/events/bogo",
+      "sourceId": "qoder-events",
+      "region": "international",
+      "publishedAt": null,
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T17:08:15+00:00",
+      "summaryMethod": "extractive",
+      "benefit": {
+        "startAt": "2026-09-01T10:00:00+08:00",
+        "endAt": "2026-09-30T23:59:59.999999+08:00",
+        "deadlineText": "活动时间 ：2026 年 9 月 1 日 10:00 至 2026 年 9 月 30 日 24:00（北京时间，UTC+8）。加赠是否发放，以订单支付成功时间是否落在上述区间为准。区间外支付的订单不参与。",
+        "ongoing": false,
+        "eligibility": "适用范围 ：Credits 加赠仅适用于个人月付。首次付费加赠仅适用于 Pro、Pro+。Ultra 首次付费不加赠；活动期内续费、升级或过期后重新开通，Pro、Pro+、Ultra 均加赠 1,000 Credits。加赠为通用 Credits。Teams、企业版及其他非个人月付订阅不在加赠范围内。",
+        "howToClaim": "查看官方原文",
+        "limited": false,
+        "startPrecision": "minute",
+        "endPrecision": "minute",
+        "timezone": "UTC+08:00"
+      },
+      "contentHash": "92bce683fec95708ced355cbc6b8d4b5b4e3148bb66d4bef28d9d22a17cc865e"
+    },
+    {
+      "id": "cdc53a836f38f868e915",
+      "productId": "qoder",
+      "categories": [
+        "benefits"
+      ],
+      "title": "SOTA 模型限时免费体验",
+      "summary": [
+        "活动时间 ：2026 年 9 月 15 日 12:00 至 9 月 20 日 12:00。",
+        "适用用户 ：Qoder 个人订阅 及 企业订阅 用户，在活动期间处于付费状态均可以领取。",
+        "活动内容 ：每天可领取一份 SOTA 模型专属资源包，可用于 Sonus 模型。"
+      ],
+      "url": "https://docs.qoder.com/zh/events/sotafree",
+      "sourceId": "qoder-events",
+      "region": "international",
+      "publishedAt": null,
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T17:08:15+00:00",
+      "summaryMethod": "extractive",
+      "benefit": {
+        "startAt": "2026-09-15T12:00:00+08:00",
+        "endAt": "2026-09-20T12:00:00+08:00",
+        "deadlineText": "活动时间 ：2026 年 9 月 15 日 12:00 至 9 月 20 日 12:00。",
+        "ongoing": false,
+        "eligibility": "适用用户 ：Qoder 个人订阅 及 企业订阅 用户，在活动期间处于付费状态均可以领取。",
+        "howToClaim": "查看官方原文",
+        "limited": false,
+        "startPrecision": "minute",
+        "endPrecision": "minute",
+        "timezone": "Asia/Singapore"
+      },
+      "contentHash": "6502c39976ec52a1c01ec823514eede3c4bff0b201c14dbe99741f71fcdbdef5"
+    },
+    {
+      "id": "d196f5c4c01404b61446",
+      "productId": "qoder",
+      "categories": [
+        "benefits"
+      ],
+      "title": "「经济」(Efficient) 模型档位开放免费使用",
+      "summary": [
+        "生效方式 ：自动生效。无需领取，无需任何设置。打开模型选择器，选「经济」即可",
+        "开始时间 ：2026 年 9 月 3 日 14:00（新加坡时间）",
+        "结束时间 ：待定。结束前会提前通知，并同步更新本页"
+      ],
+      "url": "https://docs.qoder.com/zh/events/efficientunlimited",
+      "sourceId": "qoder-events",
+      "region": "international",
+      "publishedAt": null,
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T17:08:15+00:00",
+      "summaryMethod": "extractive",
+      "benefit": {
+        "startAt": "2026-09-03T14:00:00+08:00",
+        "endAt": null,
+        "deadlineText": "开始时间 ：2026 年 9 月 3 日 14:00（新加坡时间）",
+        "ongoing": false,
+        "eligibility": "适用用户 ：付费用户，包括个人订阅 Pro、Pro+、Ultra，以及 Teams、企业版席位。个人体验版用户在 Pro 试用期内、账户有 Credits 时同样适用",
+        "howToClaim": "生效方式 ：自动生效。无需领取，无需任何设置。打开模型选择器，选「经济」即可",
+        "limited": false,
+        "startPrecision": "minute",
+        "endPrecision": null,
+        "timezone": "Asia/Singapore"
+      },
+      "contentHash": "004959fa4f50c7f7141d9099dd50573573b6b4f88e676ff97779b73752d28a2b"
+    },
+    {
+      "id": "8f6a3b03c00aed3d9a9a",
+      "productId": "qoder",
+      "categories": [
+        "benefits"
+      ],
+      "title": "高级模型特惠折扣",
+      "summary": [
+        "生效方式 ：更新至最新版本即可自动生效，无需领取或切换任何设置",
+        "Credits 计入额度 ：折扣时段内消耗的 Credits 计入月度套餐额度，并非额外赠送。",
+        "覆盖产品 ：Qoder / Qoder IDE / Qoder JetBrains 插件 / Qoder CLI / QoderWake / Qoder Cloud Agents / Qoder Mobile/Web App"
+      ],
+      "url": "https://docs.qoder.com/zh/events/offpeakrate",
+      "sourceId": "qoder-events",
+      "region": "international",
+      "publishedAt": null,
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T17:08:15+00:00",
+      "summaryMethod": "extractive",
+      "benefit": {
+        "startAt": null,
+        "endAt": null,
+        "deadlineText": "原文未说明",
+        "ongoing": false,
+        "eligibility": "原文未说明",
+        "howToClaim": "生效方式 ：更新至最新版本即可自动生效，无需领取或切换任何设置",
+        "limited": false,
+        "startPrecision": null,
+        "endPrecision": null,
+        "timezone": null
+      },
+      "contentHash": "c99432ed84181e7f7d68dc6703974c6802bed9ef917e375ab764d11517033fa9"
+    },
+    {
+      "id": "bd9a70c098039423ca0e",
+      "productId": "qoder",
+      "categories": [
+        "benefits",
+        "updates"
+      ],
+      "title": "全新 Qoder 正式上线：限时福利",
+      "summary": [
+        "个人版 ：连续 5 天，每天 10:00 可领取 500 Qwen 系列专属 Credits ，活动期间最多可领 2500 Credits 。",
+        "活动时间 ：2026 年 8 月 27 日 10:00 至 9 月 1 日 10:00（UTC+8）",
+        "优惠内容 ：每天可领取 500 Qwen 系列专属 Credits"
+      ],
+      "url": "https://docs.qoder.com/zh/events/newqoderlaunch",
+      "sourceId": "qoder-events",
+      "region": "international",
+      "publishedAt": null,
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T17:08:15+00:00",
+      "summaryMethod": "extractive",
+      "benefit": {
+        "startAt": "2026-08-27T10:00:00+08:00",
+        "endAt": "2026-09-01T10:00:00+08:00",
+        "deadlineText": "活动时间 ：2026 年 8 月 27 日 10:00 至 9 月 1 日 10:00（UTC+8）",
+        "ongoing": false,
+        "eligibility": "适用用户 ：Qoder 个人版用户",
+        "howToClaim": "生效方式 ：企业用户在全新 Qoder 中选择 Qwen 系列模型后，优惠自动生效，无需额外领取",
+        "limited": false,
+        "startPrecision": "minute",
+        "endPrecision": "minute",
+        "timezone": "UTC+08:00"
+      },
+      "contentHash": "77113fe527b57c4de090fe4c2b2f0a5e6870a462e2604846c0de7dba9e7fd0e2"
+    },
+    {
+      "id": "49abcb160456d9c41e21",
+      "productId": "qoder",
+      "categories": [
+        "benefits",
+        "updates"
+      ],
+      "title": "Qoder 一周年 × Qwen3.8-Max 正式上线：限时领 800-2000 次模型调用",
+      "summary": [
+        "Qwen3.8-Max 限时送 ：新注册用户、现有付费用户均可领取 800 次 Qwen3.8-Max 免费调用；活动期间下单可再叠加 2000 次 。",
+        "结束时间 ：2026 年 9 月 3 日 23:59（UTC+8），领取在此时间截止",
+        "领取入口 ：Qoder IDE / Qoder JetBrains 插件 / Qoder CLI / QoderWake 端内均可领取"
+      ],
+      "url": "https://docs.qoder.com/zh/events/qwen-max",
+      "sourceId": "qoder-events",
+      "region": "international",
+      "publishedAt": null,
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T17:08:15+00:00",
+      "summaryMethod": "extractive",
+      "benefit": {
+        "startAt": "2026-08-03T10:00:00+08:00",
+        "endAt": "2026-09-03T23:59:00+08:00",
+        "deadlineText": "结束时间 ：2026 年 9 月 3 日 23:59（UTC+8），领取在此时间截止",
+        "ongoing": false,
+        "eligibility": "适用用户 ：仅个人版用户",
+        "howToClaim": "领取入口 ：Qoder IDE / Qoder JetBrains 插件 / Qoder CLI / QoderWake 端内均可领取",
+        "limited": false,
+        "startPrecision": "minute",
+        "endPrecision": "minute",
+        "timezone": "UTC+08:00"
+      },
+      "contentHash": "8c74d524c226f05cfc0f27346636f806351975a33a0b025f19b9c2c770756fab"
+    },
+    {
+      "id": "fbddd25cdce483056e0e",
+      "productId": "qwenwork",
+      "categories": [
+        "practice"
+      ],
+      "title": "Web端使用链路",
+      "summary": [
+        "本章面向第一次进入千问办公的用户，介绍如何从登录、创建任务开始，通过多轮对话推进工作，查阅与管理结果，并按需使用我的网盘、扩展、电脑操控和网页发布等平台能力。",
+        "完成本章后，你将能够独立完成一次完整任务：",
+        "千问办公网页端提供两个使用入口："
+      ],
+      "url": "https://qwenwork.cn/docs/getting-started/basic-workflow",
+      "sourceId": "qwenwork-guide",
+      "region": "cn",
+      "publishedAt": null,
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T16:52:14+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "ae56d6af363077afe8935ac5ba9431270e7028d3977e8bebe5686c7762fb48e8"
+    },
+    {
+      "id": "eac14aeb931fc97c2520",
+      "productId": "doubao",
+      "categories": [
+        "practice"
+      ],
+      "title": "豆包工作介绍",
+      "summary": [
+        "豆包工作是豆包面向生产力场景打造的 AI 产品及品牌。你可以使用自然语言描述任务，并提供相关资料或工作上下文；豆包工作会根据任务目标自主拆解任务、调用工具，完成调研分析、内容创作、数据处理、应用搭建等复杂工作，并在执行过程中根据你的补充要求调整任务，生成可继续修改和分享的结果。",
+        "支持多端协同：可从电脑、浏览器或飞书发起任务，并支持跨端查看进度、补充要求和接收结果。",
+        "模型智能匹配：依托字节自研模型体系，根据任务类型自动匹配合适的模型。"
+      ],
+      "url": "https://www.doubao.com/work/docs/zh-cn/articles/095732655658-about-doubao-work",
+      "sourceId": "doubao-guide",
+      "region": "cn",
+      "publishedAt": null,
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T16:52:14+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "9e382d0010b7a0c7f34a6d3fee8a068f019aebbd972990a967ae3b82730d44f1"
+    },
+    {
+      "id": "d290c9493fdfc6d44983",
+      "productId": "qwenwork",
+      "categories": [
+        "updates"
+      ],
+      "title": "千问办公 1.0.6",
+      "summary": [
+        "新增项目空态引导与任务批量归类：项目为空时提供快速创建入口；任务列表支持批量选择、批量移动到项目和批量移出项目，操作完成后可一键撤销恢复。",
+        "客户端问题反馈支持多图预览：上传的多张截图可以在反馈弹窗内切换查看，并支持点击放大与缩放。",
+        "对话回复末尾的推荐追问支持点击直接发送，同时保留已有的输入草稿。"
+      ],
+      "url": "https://docs.qwenwork.cn/release-notes/desktop#2026-09-16",
+      "sourceId": "qwenwork-updates",
+      "region": "cn",
+      "publishedAt": "2026-09-16",
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T16:52:14+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "8051ce6283d9f58e1ba5522457a6cfd7eb7a7b88ddc85633be718aa9b7c662f6"
+    },
+    {
+      "id": "fa94ddf4cc108c2c18be",
+      "productId": "qoder",
+      "categories": [
+        "updates"
+      ],
+      "title": "Qoder 0.2.5",
+      "summary": [
+        "文件打开方式：可以根据文件类型选择在桌面端内或系统关联应用打开文件；Qoder 会记住成功使用的打开方式。",
+        "实时语音：提升连接的稳定性，降低意外断开的可能。",
+        "文件审阅：降低同时展开多个代码差异并打开终端时的 CPU 占用。"
+      ],
+      "url": "https://docs.qoder.com/zh/release-notes/qoder#2026-09-12",
+      "sourceId": "qoder-updates",
+      "region": "international",
+      "publishedAt": "2026-09-12",
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T16:52:14+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "197ab7168efe0dc9c79c57da96e6ad84b82e8b63e90b101278066799f68628db"
+    },
+    {
+      "id": "b93f8069a19e1ead6c8a",
+      "productId": "qwenwork",
+      "categories": [
+        "updates"
+      ],
+      "title": "千问办公 1.0.5",
+      "summary": [
+        "个人资料新增兑换码入口：支持账号绑定校验、兑换提交与结果反馈，让积分与权益兑换流程完整闭环。",
+        "企业微信机器人支持配置私有化网关地址，扫码模式与连接诊断同步完善。",
+        "数据迁移支持按技能、记忆、任务粒度拆分选择，可按需搬运不再一刀切全量导入。"
+      ],
+      "url": "https://docs.qwenwork.cn/release-notes/desktop#2026-09-11",
+      "sourceId": "qwenwork-updates",
+      "region": "cn",
+      "publishedAt": "2026-09-11",
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T16:52:14+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "af9e2050f37f53633341337fc30de7156b77c530345b2d034c76d14652254ce8"
+    },
+    {
+      "id": "66f3e111e0337087277d",
+      "productId": "qoder",
+      "categories": [
+        "updates"
+      ],
+      "title": "Qoder 0.2.3",
+      "summary": [
+        "Computer Use 执行点击等视觉操作前，会校验截图是否为最新、目标窗口是否仍然一致，提升操作准确性。",
+        "优化 Computer Use 的取消与超时处理，长时间运行的操作响应更及时。",
+        "修复 Computer Use 操作结果暂时无法确认时可能重复执行同一操作的问题。"
+      ],
+      "url": "https://docs.qoder.com/zh/release-notes/qoder#2026-09-10",
+      "sourceId": "qoder-updates",
+      "region": "international",
+      "publishedAt": "2026-09-10",
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T16:52:14+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "fa98f023d3c0bbdd1d95806bbfa2d4336a4a3fc56d3d571c2beeea5d31547f78"
+    },
+    {
+      "id": "7e3baf60e3f2d931967b",
+      "productId": "workbuddy",
+      "categories": [
+        "updates"
+      ],
+      "title": "WorkBuddy 5.5.6 版本发布",
+      "summary": [
+        "优化自动化任务重试，失败后可在当前会话中继续，避免创建重复的任务会话",
+        "修复自动化任务重试成功后运行历史状态不准确、切换任务后旧错误再次出现的问题",
+        "优化自动化任务错误提示，不再展示无意义的内部错误码和失效操作指引"
+      ],
+      "url": "https://www.workbuddy.cn/docs/workbuddy/Changelog#_5-5-6-%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83-%F0%9F%9A%80-2026-09-10",
+      "sourceId": "workbuddy-updates",
+      "region": "cn",
+      "publishedAt": "2026-09-10",
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T16:52:14+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "c3dba429b13fb572e327d9fbcf577e72f36a6c1ded8800a903e3e935a066d176"
+    },
+    {
+      "id": "570c17def399b9cea770",
+      "productId": "workbuddy",
+      "categories": [
+        "updates"
+      ],
+      "title": "WorkBuddy 5.5.5 版本发布",
+      "summary": [
+        "新增创意设计能力，支持图片生成、视频生成和品牌设计等场景",
+        "发起任务时可直接添加资料库中的文档或空间作为参考内容",
+        "后台任务支持查看详情和终端输出，并可随时取消运行"
+      ],
+      "url": "https://www.workbuddy.cn/docs/workbuddy/Changelog#_5-5-5-%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83-%F0%9F%9A%80-2026-09-10",
+      "sourceId": "workbuddy-updates",
+      "region": "cn",
+      "publishedAt": "2026-09-10",
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T16:52:14+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "85ef966d1c9d84f81eaa38ce5f3b669ed46a69ce3639ad7741a69016d2e7b364"
+    },
+    {
+      "id": "628312b63599ba0ff44c",
+      "productId": "qoder",
+      "categories": [
+        "updates"
+      ],
+      "title": "Qoder 0.2.2",
+      "summary": [
+        "网络代理 ：新增网络代理配置，支持连接测试，保存后重启生效。",
+        "模型选择 ：新建会话会按账号和运行环境，沿用你最近手动选择的模型。",
+        "Goal 模式 ：新增 Goal 最大轮次设置，并在停止会话后暂停 Goal 计时。"
+      ],
+      "url": "https://docs.qoder.com/zh/release-notes/qoder#2026-09-09",
+      "sourceId": "qoder-updates",
+      "region": "international",
+      "publishedAt": "2026-09-09",
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T16:52:14+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "b237dfd7d508935519811b9033e55c0fbf1d5fed172fd331ba2f4bda8c58be61"
+    },
+    {
+      "id": "ef05c3ef16b5ad1f95ca",
+      "productId": "qoder",
+      "categories": [
+        "updates"
+      ],
+      "title": "Qoder 0.2.1",
+      "summary": [
+        "移动端远程控制 ：开启后，可以使用手机在电脑端上创建并执行任务。手机端与电脑端共用同一会话，重命名、删除、创建任务分支、继续追问等操作均会双向同步。",
+        "支持拖入会话引用 ：把会话直接拖入对话输入框即可引用。",
+        "多任务性能优化 ：同时运行多任务时内存占用与消息链路开销更低。"
+      ],
+      "url": "https://docs.qoder.com/zh/release-notes/qoder#2026-09-08",
+      "sourceId": "qoder-updates",
+      "region": "international",
+      "publishedAt": "2026-09-08",
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T16:52:14+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "4746e0c921d76016497803ac873427c3617f6a552f39cb3889b9072a5dcf8a96"
+    },
+    {
+      "id": "8d14827cbb63b9b85d4e",
+      "productId": "workbuddy",
+      "categories": [
+        "updates"
+      ],
+      "title": "WorkBuddy 5.5.4 版本发布",
+      "summary": [
+        "「允许锁屏运行」新增关闭、熄屏后继续运行、保持屏幕常亮三种模式",
+        "客户端将「自动化」统一更名为更直观的「定时任务」",
+        "模型的上下文窗口档位可分别记忆，新建会话或重启后继续沿用上次选择"
+      ],
+      "url": "https://www.workbuddy.cn/docs/workbuddy/Changelog#_5-5-4-%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83-%F0%9F%9A%80-2026-09-08",
+      "sourceId": "workbuddy-updates",
+      "region": "cn",
+      "publishedAt": "2026-09-08",
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T16:52:14+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "56ea5c6c2c63a7b30f608deda654feb11eb35830e6fab328722a3d70f5f405cf"
+    },
+    {
+      "id": "c00671ee9ae574afae60",
+      "productId": "qwenwork",
+      "categories": [
+        "updates"
+      ],
+      "title": "千问办公 1.0.4",
+      "summary": [
+        "新对话默认使用最近打开的项目：点开新对话可直接沿用上一次的工作目录与上下文，不再需要重新挑选项目；从当前任务新建的任务同样会继承所属项目。",
+        "产物文件支持\"另存为\"：Agent 生成的文件可直接保存到指定目录，保存完成后一键在文件管理器中定位到新文件。",
+        "设计、写作、PPT 三种模式移除 \"Beta\" 标记，作为常态能力对全部用户开放。"
+      ],
+      "url": "https://docs.qwenwork.cn/release-notes/desktop#2026-09-07",
+      "sourceId": "qwenwork-updates",
+      "region": "cn",
+      "publishedAt": "2026-09-07",
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T16:52:14+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "33f33c36a15b3e79e8b60303d8290f56f27f074597b17fe67fb73a845d6f6c71"
+    },
+    {
+      "id": "9532edeb3010f1ea56f7",
+      "productId": "qoder",
+      "categories": [
+        "updates"
+      ],
+      "title": "Qoder 0.1.8",
+      "summary": [
+        "BYOK 自定义 API 地址 ：个人版 BYOK 支持填写自定义 Base URL，可接入 OpenAI / Anthropic 兼容协议的模型服务。",
+        "更便捷的检索 ：支持在 Markdown 预览界面直接搜索。",
+        "安装器 ：改进 Windows 进程检测与安装恢复。"
+      ],
+      "url": "https://docs.qoder.com/zh/release-notes/qoder#2026-09-05",
+      "sourceId": "qoder-updates",
+      "region": "international",
+      "publishedAt": "2026-09-05",
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T16:52:14+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "35987f5e232ab3a596565a7e8916fc3bd50eee8323453a251e74cc8b9e2c2141"
+    },
+    {
+      "id": "b2a4b7c8f30866d73aeb",
+      "productId": "qwenwork",
+      "categories": [
+        "updates"
+      ],
+      "title": "千问办公 1.0.3",
+      "summary": [
+        "支持完整复制用户消息并恢复到输入框重新编辑，附件、引用和长文本一并保留，方便直接复用已有输入。",
+        "主输入框支持有序、无序及多级 Markdown 列表，并完善缩进、换行与复制粘贴。",
+        "输入框和聊天消息支持网页链接识别与站点图标展示，点击即可打开。"
+      ],
+      "url": "https://docs.qwenwork.cn/release-notes/desktop#2026-09-04",
+      "sourceId": "qwenwork-updates",
+      "region": "cn",
+      "publishedAt": "2026-09-04",
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T16:52:14+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "aea0bed41ce69b10e731a6a82f7e1b87e947e20b23a64e1258473c214b76dfcf"
+    },
+    {
+      "id": "5c39be982c59a4ac8ad5",
+      "productId": "workbuddy",
+      "categories": [
+        "updates"
+      ],
+      "title": "WorkBuddy 5.5.3 版本发布",
+      "summary": [
+        "本地 Office 文件预览支持更大文件，Word 和表格最高 100MB，演示文稿最高 500MB",
+        "优化桌面端与移动端的模型列表一致性，避免自定义模型与同名内置模型互相覆盖或丢失",
+        "提升 Kling V3 文生视频和图生视频的参数兼容性，支持 720P、1080P 输出"
+      ],
+      "url": "https://www.workbuddy.cn/docs/workbuddy/Changelog#_5-5-3-%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83-%F0%9F%9A%80-2026-09-04",
+      "sourceId": "workbuddy-updates",
+      "region": "cn",
+      "publishedAt": "2026-09-04",
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T16:52:14+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "b878eff8455fef6882426c25c3942c956ac416e7202c76cbe0b1d677d63d34ab"
+    },
+    {
+      "id": "bda1b8e8d8341edb3eb8",
+      "productId": "qoder",
+      "categories": [
+        "updates"
+      ],
+      "title": "Qoder 0.1.6",
+      "summary": [
+        "会话批量归档 ：侧栏支持多选会话批量归档，工作模式可快捷切换。",
+        "产物独立窗口预览 ：Agent 生成的产物支持在独立窗口中预览。",
+        "终端链接跳转 ：终端中的 HTTP/HTTPS 链接可直接点击打开。"
+      ],
+      "url": "https://docs.qoder.com/zh/release-notes/qoder#2026-09-03",
+      "sourceId": "qoder-updates",
+      "region": "international",
+      "publishedAt": "2026-09-03",
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T16:52:14+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "17b031490a73b89c5d8254dbb193fcdfdad62bf7a39dcb446f0e82b963427435"
+    },
+    {
+      "id": "37b3eec2f83395c61852",
+      "productId": "workbuddy",
+      "categories": [
+        "updates"
+      ],
+      "title": "WorkBuddy 5.5.2 版本发布",
+      "summary": [
+        "优化积分到期提醒和积分明细，按有效期分类展示，并保留尚未过期的积分包记录",
+        "优化会话中的链接与文件引用，悬停时可查看完整地址或路径，展开内容时页面位置更稳定",
+        "恢复 Ctrl+Enter 或 Cmd+Enter 换行习惯，同时保留自定义快捷键优先级"
+      ],
+      "url": "https://www.workbuddy.cn/docs/workbuddy/Changelog#_5-5-2-%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83-%F0%9F%9A%80-2026-09-03",
+      "sourceId": "workbuddy-updates",
+      "region": "cn",
+      "publishedAt": "2026-09-03",
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T16:52:14+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "98f44970b8b943d492b4643ce0040971f1b501bcaf4dd69049c80955e31434d8"
+    },
+    {
+      "id": "36e229e4aafe7edc528d",
+      "productId": "workbuddy",
+      "categories": [
+        "updates"
+      ],
+      "title": "WorkBuddy 5.5.1 版本发布",
+      "summary": [
+        "视频生成支持选择画面比例、是否带声音，并可描述不希望出现的内容",
+        "桌面端侧栏新增当前客户端版本号，便于快速确认所用版本",
+        "提升个人及项目云助理的建连和历史任务切换速度，减少首屏与预览区域的白屏等待"
+      ],
+      "url": "https://www.workbuddy.cn/docs/workbuddy/Changelog#_5-5-1-%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83-%F0%9F%9A%80-2026-09-02",
+      "sourceId": "workbuddy-updates",
+      "region": "cn",
+      "publishedAt": "2026-09-02",
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T16:52:14+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "364fa6edc75d3049fc9300c01a106169f6ad10f8021fe9f72203e12924612635"
+    },
+    {
+      "id": "baf66451660b3c686e50",
+      "productId": "qoder",
+      "categories": [
+        "updates"
+      ],
+      "title": "Qoder 0.1.4",
+      "summary": [
+        "Windows 更新后自动清理旧版本备份，释放磁盘空间。",
+        "修复 Windows 快速更新后任务栏图标显示为空白的问题。",
+        "修复 macOS 从睡眠状态唤醒后插件被标记为无响应的问题。"
+      ],
+      "url": "https://docs.qoder.com/zh/release-notes/qoder#2026-09-01",
+      "sourceId": "qoder-updates",
+      "region": "international",
+      "publishedAt": "2026-09-01",
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T16:52:14+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "56c2beab9fb4f3f0f5c7cbcbd29927cc7f57a98484033606c435fdeb8b5192bb"
+    },
+    {
+      "id": "2982b0def04b5f209452",
+      "productId": "workbuddy",
+      "categories": [
+        "updates"
+      ],
+      "title": "WorkBuddy 5.5.0 版本发布",
+      "summary": [
+        "新增行业 Buddy 应用，可按场景提供专属首页、专家、技能和连接器，进入应用后可直接发起更贴合行业需求的任务",
+        "支持通过 macOS 和 Windows 系统分享入口，将微信聊天记录发送到 WorkBuddy，并优化转发内容预览",
+        "新增图片处理能力，支持去文字或水印、图片修复、增强、美颜和透明背景抠图"
+      ],
+      "url": "https://www.workbuddy.cn/docs/workbuddy/Changelog#_5-5-0-%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83-%F0%9F%9A%80-2026-09-01",
+      "sourceId": "workbuddy-updates",
+      "region": "cn",
+      "publishedAt": "2026-09-01",
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T16:52:14+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "5f22a9372476bebeefcba50412ff56a500cab11d5175d253a0edde2b1bd34f4a"
+    },
+    {
+      "id": "ee645e5a8c160c53dcdc",
+      "productId": "workbuddy",
+      "categories": [
+        "updates"
+      ],
+      "title": "WorkBuddy 5.4.7 版本发布",
+      "summary": [
+        "新增「订阅和用量」设置页，可查看套餐概览、分类积分和资源包明细，并在应用内购买积分、管理自动续费",
+        "优化积分展示与刷新，购买后无需刷新整页即可查看最新余额，体验版套餐的基础积分显示更准确",
+        "修复快速、均衡、极致三档模型无法发送图片的问题"
+      ],
+      "url": "https://www.workbuddy.cn/docs/workbuddy/Changelog#_5-4-7-%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83-%F0%9F%9A%80-2026-09-01",
+      "sourceId": "workbuddy-updates",
+      "region": "cn",
+      "publishedAt": "2026-09-01",
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T16:52:14+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "5ac09d4a7ac748f0de97d2a163b618223c3d0f4286b2f724fde7acccd8986549"
+    },
+    {
+      "id": "8b66a99d9839dd5b12c6",
+      "productId": "qoder",
+      "categories": [
+        "updates"
+      ],
+      "title": "Qoder 0.1.3",
+      "summary": [
+        "优化 Windows 安装与更新的可靠性",
+        "优化长会话的流式渲染与持久化性能，回复更流畅",
+        "降低插件与 MCP 状态变化引起的重复刷新，减少 CPU 与内存占用"
+      ],
+      "url": "https://docs.qoder.com/zh/release-notes/qoder#2026-08-31",
+      "sourceId": "qoder-updates",
+      "region": "international",
+      "publishedAt": "2026-08-31",
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T16:52:14+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "856d28be87d66ccfa7a55ceabab2f2d3c4a69dead3a876643995da0d701a09fb"
+    },
+    {
+      "id": "be7a3b1ac69eecfbbbf0",
+      "productId": "qwenwork",
+      "categories": [
+        "updates"
+      ],
+      "title": "千问办公 1.0.2",
+      "summary": [
+        "新增任务 Fork 能力，可从现有任务分叉出新任务并延续必要上下文",
+        "定时任务系统化升级：支持按项目组织与归档执行记录，调度与执行记录展示更完整",
+        "新增项目分组升级引导与任务归属选择，历史任务整理与新任务创建更清晰"
+      ],
+      "url": "https://docs.qwenwork.cn/release-notes/desktop#2026-08-31",
+      "sourceId": "qwenwork-updates",
+      "region": "cn",
+      "publishedAt": "2026-08-31",
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T16:52:14+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "56377a0ec34a8ca2b195922219768c168ae1005a4cc1d774558d4fa08d6b7c28"
+    },
+    {
+      "id": "c9369af2a37461997134",
+      "productId": "workbuddy",
+      "categories": [
+        "updates"
+      ],
+      "title": "WorkBuddy 5.4.5 版本发布",
+      "summary": [
+        "个人面板新增「记忆与进化」快捷入口，可直接进入个性化记忆设置",
+        "优化模型档位记忆，思考强度与上下文长度可按会话保存，切换任务或重启后仍保持原选择",
+        "提升长对话浏览与切换流畅度，返回仍在生成的会话时可补齐离开期间的思考、正文和工具内容"
+      ],
+      "url": "https://www.workbuddy.cn/docs/workbuddy/Changelog#_5-4-5-%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83-%F0%9F%9A%80-2026-08-30",
+      "sourceId": "workbuddy-updates",
+      "region": "cn",
+      "publishedAt": "2026-08-30",
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T16:52:14+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "546953b6e32da54c510cb00b56a3d37a6b8b71ade4cdc804e651be62338fb304"
+    },
+    {
+      "id": "6e5cb4d6fa06e3b648c1",
+      "productId": "qoder",
+      "categories": [
+        "updates"
+      ],
+      "title": "Qoder 0.1.2",
+      "summary": [
+        "支持企业扩展与 MCP 策略管控。",
+        "提升新会话首次发送与应用启动速度。",
+        "优化首次启动数据导入，支持并行处理，单项异常不再阻断整批导入。"
+      ],
+      "url": "https://docs.qoder.com/zh/release-notes/qoder#2026-08-28",
+      "sourceId": "qoder-updates",
+      "region": "international",
+      "publishedAt": "2026-08-28",
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T16:52:14+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "0b59414a411e43a3a9c8d50dc728a4773fc55585fbd1bc1a97334e9c4964db35"
+    },
+    {
+      "id": "1a271b95e080a9f03165",
+      "productId": "qwenwork",
+      "categories": [
+        "updates"
+      ],
+      "title": "千问办公 1.0.1",
+      "summary": [
+        "新增本地项目能力，可按项目组织任务与产物，兼容既有工作台历史项目",
+        "支持企业发布专属技能、连接器与专家套件，可在组织内下发并配置公开市场可见性",
+        "接入淘宝闪购 MCP，可在对话中直接完成闪购相关工具调用"
+      ],
+      "url": "https://docs.qwenwork.cn/release-notes/desktop#2026-08-28",
+      "sourceId": "qwenwork-updates",
+      "region": "cn",
+      "publishedAt": "2026-08-28",
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T16:52:14+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "75564b7a6be6fd7bd6d849795ea99ea270773cc9aedf37c05b2c68779779bafa"
+    },
+    {
+      "id": "4623f7cec910b1c2fdf8",
+      "productId": "workbuddy",
+      "categories": [
+        "updates"
+      ],
+      "title": "WorkBuddy 5.4.4 版本发布",
+      "summary": [
+        "新增专家链接直达能力，可从活动链接进入指定专家并自动带入引导语",
+        "提升专家和专家团启动稳定性，修复启动卡住、身份或版本错配，以及「做同款」时名称、头像异常的问题",
+        "修复本地助理回复结束后只显示「已完成」、新建对话误复用旧会话的问题"
+      ],
+      "url": "https://www.workbuddy.cn/docs/workbuddy/Changelog#_5-4-4-%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83-%F0%9F%9A%80-2026-08-28",
+      "sourceId": "workbuddy-updates",
+      "region": "cn",
+      "publishedAt": "2026-08-28",
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T16:52:14+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "bf84caf79355f5b45254193fa25889f6437ff85a8f2d3ac51a5386ce5542b95e"
+    },
+    {
+      "id": "7b95a024d78c2562671d",
+      "productId": "qoder",
+      "categories": [
+        "updates"
+      ],
+      "title": "Qoder 0.1.0",
+      "summary": [
+        "SOTA 模型与多模型策略 ：内置全球顶尖模型，不绑定单一模型。你可以按任务自主选择，也可以交给 Auto 智能调度引擎，在效果、速度和成本之间自动匹配更合适的模型。",
+        "Harness，把“想得到”变成“做得到” ：Qoder 的 Harness 支持规划、执行、验证与纠错的持续循环。面对长任务和复杂任务，它能记住上下文、根据真实结果调整策略，必要时重试或回滚，并通过分级权限与工具白名单守住安全边界。",
+        "在真实任务环境里，把事情做完 ：智能体的工作环境不局限于对话框和代码工程。通过 Browser Use 和 Computer Use 能力，Qoder 可以像你一样操作网页与桌面应用，让智能体在真实环境里把事情做完。"
+      ],
+      "url": "https://docs.qoder.com/zh/release-notes/qoder#2026-08-27",
+      "sourceId": "qoder-updates",
+      "region": "international",
+      "publishedAt": "2026-08-27",
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T17:18:19+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "a85a10f650f3fafaedbe8c2eb8686f3083e305eb806acbd71f9248007592a137"
+    },
+    {
+      "id": "4c73a84bc75a370056bb",
+      "productId": "workbuddy",
+      "categories": [
+        "updates"
+      ],
+      "title": "WorkBuddy 5.4.3 版本发布",
+      "summary": [
+        "修复升级后已置顶的任务和会话丢失的问题",
+        "提升专家团会话稳定性，修复首次发起无响应、连接超时及重开后无法继续协作的问题",
+        "优化自动化任务体验，支持搜索并选择专家团，减少自定义 MCP 确认卡住及任务中断后重复补跑的问题"
+      ],
+      "url": "https://www.workbuddy.cn/docs/workbuddy/Changelog#_5-4-3-%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83-%F0%9F%9A%80-2026-08-26",
+      "sourceId": "workbuddy-updates",
+      "region": "cn",
+      "publishedAt": "2026-08-26",
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T16:52:14+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "3a7880677899334d003147d7872b2ef684c6ce00269b5082eca641716d318d4f"
+    },
+    {
+      "id": "1a038a20e323b63ab900",
+      "productId": "qwenwork",
+      "categories": [
+        "updates"
+      ],
+      "title": "千问办公 1.0.0",
+      "summary": [
+        "自然语言驱动的 AI 任务，支持多轮沟通与多模型选择",
+        "本地文件与文件夹处理，支持读取、分析、编辑和整理",
+        "提供设计、写作与 PPT 专业工作台，支持边对话、边创作、边预览调整"
+      ],
+      "url": "https://docs.qwenwork.cn/release-notes/desktop#2026-08-24",
+      "sourceId": "qwenwork-updates",
+      "region": "cn",
+      "publishedAt": "2026-08-24",
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T16:52:14+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "b5c7b4fe30ecedb7115b7662112c04fe4e7e7570ff1bf828e96317644e320451"
+    },
+    {
+      "id": "98f56ac507449f31a0a9",
+      "productId": "workbuddy",
+      "categories": [
+        "updates"
+      ],
+      "title": "WorkBuddy 5.4.2 版本发布",
+      "summary": [
+        "提升桌面端长时间运行稳定性，减少后台运行引起的界面卡顿与系统资源占用"
+      ],
+      "url": "https://www.workbuddy.cn/docs/workbuddy/Changelog#_5-4-2-%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83-%F0%9F%9A%80-2026-08-24",
+      "sourceId": "workbuddy-updates",
+      "region": "cn",
+      "publishedAt": "2026-08-24",
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T16:52:14+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "1b5cae9a34c8b30361318fbf0b7feec31736c205da042f94bf8f0c2100c80575"
+    },
+    {
+      "id": "24a54157e1179025e814",
+      "productId": "doubao",
+      "categories": [
+        "benefits",
+        "updates"
+      ],
+      "title": "豆包工作全新发布！详解核心价值、主要功能，以及与豆包、飞书的关系",
+      "summary": [
+        "下载豆包工作PC客户端，登录即享30天免费会员",
+        "如果你已经用过 AI，大概率熟悉这样的过程：先向 AI 提问，再把回答复制到文档；需要数据时，自己打开表格整理；需要查资料时，在浏览器里来回搜索；要做汇报时，再把文字、图表和图片搬进 PPT。AI 参与了其中一两个环节，但任务依然由人拆解、衔接和收尾。",
+        "Agent 模式想解决的是另一类问题：能不能把一个完整的工作目标交给 AI ，让它自己拆解步骤并高质量完成？"
+      ],
+      "url": "https://www.feishu.cn/content/article/7677519271848610746",
+      "sourceId": "doubao-launch",
+      "region": "cn",
+      "publishedAt": "2026-08-24",
+      "firstSeenAt": "2026-09-17T17:18:19+00:00",
+      "updatedAt": "2026-09-17T17:18:19+00:00",
+      "summaryMethod": "extractive",
+      "benefit": {
+        "startAt": null,
+        "endAt": null,
+        "deadlineText": "原文未说明",
+        "ongoing": false,
+        "eligibility": "原文未说明",
+        "howToClaim": "查看官方原文",
+        "limited": false,
+        "startPrecision": null,
+        "endPrecision": null,
+        "timezone": null
+      },
+      "contentHash": "c67d66e6edaee297d78024d7133191d68077580d639ae1da425d5b348f845ea9"
+    },
+    {
+      "id": "bfe4c2eb2720c0cff8e6",
+      "productId": "workbuddy",
+      "categories": [
+        "updates"
+      ],
+      "title": "WorkBuddy 5.4.1 版本发布",
+      "summary": [
+        "提升多轮对话稳定性，修复取消后无法继续发送、切换模型或专家时任务中断等问题",
+        "优化专家使用体验，修复专家链接无法召唤、专家改名后启动旧版本及历史署名丢失的问题",
+        "提升连接器授权与开关稳定性，修复授权失败后状态卡住、反复跳转授权页或开关延迟的问题"
+      ],
+      "url": "https://www.workbuddy.cn/docs/workbuddy/Changelog#_5-4-1-%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83-%F0%9F%9A%80-2026-08-23",
+      "sourceId": "workbuddy-updates",
+      "region": "cn",
+      "publishedAt": "2026-08-23",
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T16:52:14+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "0e10d87967d0c4c09e2206cc42711eac59aa9082cd635f7baab642d809f4e4be"
+    },
+    {
+      "id": "a371a144ffe7b65faff8",
+      "productId": "workbuddy",
+      "categories": [
+        "updates"
+      ],
+      "title": "WorkBuddy 5.4.0 版本发布",
+      "summary": [
+        "支持创建 Worktree 任务，在同一工作区并行处理多个开发任务，代码改动互不干扰",
+        "新增代码开发模式下的 Git 分支展示与安全切换，并提供独立本地终端和后台命令运行面板",
+        "新增全新系统设置页、客户端自检工具和系统通知，环境排查与待确认任务处理更便捷"
+      ],
+      "url": "https://www.workbuddy.cn/docs/workbuddy/Changelog#_5-4-0-%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83-%F0%9F%9A%80-2026-08-20",
+      "sourceId": "workbuddy-updates",
+      "region": "cn",
+      "publishedAt": "2026-08-20",
+      "firstSeenAt": "2026-09-17T16:52:14+00:00",
+      "updatedAt": "2026-09-17T16:52:14+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "813b9185c18b413db43b6b8d9234ec9ae335691d8e7907e48cc0a2ef212c5cdb"
+    }
+  ],
+  "sources": [
+    {
+      "id": "qoder-updates",
+      "productId": "qoder",
+      "name": "Qoder 国际版 · 更新日志",
+      "kind": "website",
+      "url": "https://docs.qoder.com/zh/release-notes/qoder",
+      "checkedAt": "2026-09-17T17:18:19+00:00",
+      "lastSuccessAt": "2026-09-17T17:18:19+00:00",
+      "itemCount": 11,
+      "status": "ok",
+      "message": "本轮检查 11 条，匹配 11 条。"
+    },
+    {
+      "id": "qoder-events",
+      "productId": "qoder",
+      "name": "Qoder 国际版 · 官方活动",
+      "kind": "website",
+      "url": "https://docs.qoder.com/zh/events/bogo",
+      "checkedAt": "2026-09-17T17:18:19+00:00",
+      "lastSuccessAt": "2026-09-17T17:18:19+00:00",
+      "itemCount": 6,
+      "status": "ok",
+      "message": "本轮检查 6 条，匹配 6 条。"
+    },
+    {
+      "id": "qwenwork-updates",
+      "productId": "qwenwork",
+      "name": "千问办公 · 更新日志",
+      "kind": "website",
+      "url": "https://docs.qwenwork.cn/release-notes/desktop",
+      "checkedAt": "2026-09-17T17:18:19+00:00",
+      "lastSuccessAt": "2026-09-17T17:18:19+00:00",
+      "itemCount": 7,
+      "status": "ok",
+      "message": "本轮检查 7 条，匹配 7 条。"
+    },
+    {
+      "id": "qwenwork-guide",
+      "productId": "qwenwork",
+      "name": "千问办公 · 使用指南",
+      "kind": "website",
+      "url": "https://qwenwork.cn/docs/getting-started/basic-workflow",
+      "checkedAt": "2026-09-17T17:18:19+00:00",
+      "lastSuccessAt": "2026-09-17T17:18:19+00:00",
+      "itemCount": 1,
+      "status": "ok",
+      "message": "本轮检查 1 条，匹配 1 条。"
+    },
+    {
+      "id": "workbuddy-updates",
+      "productId": "workbuddy",
+      "name": "WorkBuddy · 更新日志",
+      "kind": "website",
+      "url": "https://www.workbuddy.cn/docs/workbuddy/Changelog",
+      "checkedAt": "2026-09-17T17:18:19+00:00",
+      "lastSuccessAt": "2026-09-17T17:18:19+00:00",
+      "itemCount": 14,
+      "status": "ok",
+      "message": "本轮检查 25 条，匹配 14 条。"
+    },
+    {
+      "id": "workbuddy-guide",
+      "productId": "workbuddy",
+      "name": "WorkBuddy · 快速开始",
+      "kind": "website",
+      "url": "https://www.workbuddy.cn/docs/workbuddy/Quickstart",
+      "checkedAt": "2026-09-17T17:18:19+00:00",
+      "lastSuccessAt": "2026-09-17T17:18:19+00:00",
+      "itemCount": 0,
+      "status": "ok",
+      "message": "本轮检查 1 条，匹配 0 条。"
+    },
+    {
+      "id": "doubao-guide",
+      "productId": "doubao",
+      "name": "豆包工作 · 官方帮助中心",
+      "kind": "website",
+      "url": "https://www.doubao.com/work/docs/zh-cn/articles/095732655658-about-doubao-work",
+      "checkedAt": "2026-09-17T17:18:19+00:00",
+      "lastSuccessAt": "2026-09-17T17:18:19+00:00",
+      "itemCount": 1,
+      "status": "ok",
+      "message": "本轮检查 1 条，匹配 1 条。"
+    },
+    {
+      "id": "doubao-launch",
+      "productId": "doubao",
+      "name": "飞书官方 · 豆包工作介绍",
+      "kind": "website",
+      "url": "https://www.feishu.cn/content/article/7677519271848610746",
+      "checkedAt": "2026-09-17T17:18:19+00:00",
+      "lastSuccessAt": "2026-09-17T17:18:19+00:00",
+      "itemCount": 1,
+      "status": "ok",
+      "message": "本轮检查 1 条，匹配 1 条。"
+    },
+    {
+      "id": "qoder-xhs",
+      "productId": "qoder",
+      "name": "Qoder · 小红书",
+      "kind": "xiaohongshu",
+      "url": "https://xhslink.com/m/210eULoS2jT",
+      "checkedAt": "2026-09-17T17:18:19+00:00",
+      "lastSuccessAt": null,
+      "itemCount": 0,
+      "status": "restricted",
+      "message": "官网提供的账号入口；无登录定时采集尚不可用，已跳过。"
+    },
+    {
+      "id": "workbuddy-xhs",
+      "productId": "workbuddy",
+      "name": "腾讯WorkBuddy · 小红书",
+      "kind": "xiaohongshu",
+      "url": "https://www.xiaohongshu.com/user/profile/69b82bc0000000003202c526",
+      "checkedAt": "2026-09-17T17:18:19+00:00",
+      "lastSuccessAt": null,
+      "itemCount": 0,
+      "status": "restricted",
+      "message": "用户指定账号，页面存在登录提示；未取得可靠公开文章入口，已跳过。"
+    },
+    {
+      "id": "doubao-xhs",
+      "productId": "doubao",
+      "name": "豆包工作 · 小红书",
+      "kind": "xiaohongshu",
+      "url": "https://www.xiaohongshu.com/user/profile/6805d023000000000a03fa77",
+      "checkedAt": "2026-09-17T17:18:19+00:00",
+      "lastSuccessAt": null,
+      "itemCount": 0,
+      "status": "restricted",
+      "message": "用户指定账号，页面存在登录提示；未取得可靠公开文章入口，已跳过。"
+    },
+    {
+      "id": "qwenwork-xhs",
+      "productId": "qwenwork",
+      "name": "千问办公 · 小红书",
+      "kind": "xiaohongshu",
+      "url": "https://www.xiaohongshu.com/user/profile/611dc5fd0000000001006906",
+      "checkedAt": "2026-09-17T17:18:19+00:00",
+      "lastSuccessAt": null,
+      "itemCount": 0,
+      "status": "restricted",
+      "message": "用户指定账号，页面存在登录提示；未取得可靠公开文章入口，已跳过。"
+    },
+    {
+      "id": "qoder-wechat",
+      "productId": "qoder",
+      "name": "Qoder · 微信公众号",
+      "kind": "wechat",
+      "url": "https://qoder.com.cn/",
+      "checkedAt": "2026-09-17T17:18:19+00:00",
+      "lastSuccessAt": null,
+      "itemCount": 0,
+      "status": "unconfigured",
+      "message": "官网提供关注二维码，但没有可验证的公开文章列表，暂未接入。"
+    },
+    {
+      "id": "workbuddy-wechat",
+      "productId": "workbuddy",
+      "name": "WorkBuddy · 微信公众号",
+      "kind": "wechat",
+      "url": "https://www.workbuddy.cn/docs/workbuddy/Contact",
+      "checkedAt": "2026-09-17T17:18:19+00:00",
+      "lastSuccessAt": null,
+      "itemCount": 0,
+      "status": "unconfigured",
+      "message": "官方联系页提供关注二维码，但没有可验证的公开文章列表，暂未接入。"
+    },
+    {
+      "id": "qwenwork-wechat",
+      "productId": "qwenwork",
+      "name": "千问办公 · 微信公众号",
+      "kind": "wechat",
+      "url": null,
+      "checkedAt": "2026-09-17T17:18:19+00:00",
+      "lastSuccessAt": null,
+      "itemCount": 0,
+      "status": "unconfigured",
+      "message": "独立官方公众号尚未核实，未以母品牌账号代替。"
+    },
+    {
+      "id": "doubao-wechat",
+      "productId": "doubao",
+      "name": "豆包工作 · 微信公众号",
+      "kind": "wechat",
+      "url": null,
+      "checkedAt": "2026-09-17T17:18:19+00:00",
+      "lastSuccessAt": null,
+      "itemCount": 0,
+      "status": "unconfigured",
+      "message": "独立官方公众号尚未核实，未以母品牌账号代替。"
+    }
+  ],
+  "run": {
+    "newCount": 1,
+    "updatedCount": 2,
+    "budget": {
+      "limitCny": 30.0,
+      "guardCny": 25.0,
+      "spentCny": 0.0,
+      "mode": "extractive"
+    }
+  }
+}

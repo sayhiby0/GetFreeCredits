@@ -1,0 +1,18 @@
+{
+  "months": {
+    "2026-09": {
+      "spentCny": 0,
+      "calls": 0
+    }
+  },
+  "cursors": {
+    "qoder-updates": 0,
+    "qoder-events": 0,
+    "qwenwork-updates": 0,
+    "qwenwork-guide": 0,
+    "workbuddy-updates": 0,
+    "workbuddy-guide": 0,
+    "doubao-guide": 0,
+    "doubao-launch": 0
+  }
+}
