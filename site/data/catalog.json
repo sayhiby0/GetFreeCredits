@@ -4,7 +4,9 @@
     {"id": "qoder", "name": "Qoder", "short": "Q", "color": "#17836b", "homepage": "https://qoder.com/zh", "description": "国际版优先"},
     {"id": "qwenwork", "name": "千问办公", "short": "千", "color": "#7959c5", "homepage": "https://qwenwork.cn/", "description": "QwenWork"},
     {"id": "workbuddy", "name": "WorkBuddy", "short": "W", "color": "#467ad2", "homepage": "https://www.workbuddy.cn/", "description": "腾讯 AI 工作台"},
-    {"id": "doubao", "name": "豆包工作", "short": "豆", "color": "#db8b46", "homepage": "https://www.doubao.com/work", "description": "AI 办公助手"}
+    {"id": "doubao", "name": "豆包工作", "short": "豆", "color": "#db8b46", "homepage": "https://www.doubao.com/work", "description": "AI 办公助手"},
+    {"id": "codex", "name": "OpenAI Codex", "short": "X", "color": "#10a37f", "homepage": "https://openai.com/codex/", "description": "OpenAI 编程代理"},
+    {"id": "claude", "name": "Claude", "short": "C", "color": "#d97757", "homepage": "https://www.anthropic.com/claude", "description": "Anthropic 助手与 Claude Code"}
   ],
   "categories": [
     {"id": "benefits", "name": "福利追踪", "description": "每一份值得领取的权益", "icon": "gift"},

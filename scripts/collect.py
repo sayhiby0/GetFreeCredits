@@ -609,7 +609,7 @@ def collect(config_path, output_path, state_path, max_items=60, now=None, client
         status = {key: source.get(key) for key in ['id', 'productId', 'name', 'kind', 'url']}
         status.update({'checkedAt': stamp, 'lastSuccessAt': previous.get('lastSuccessAt'), 'itemCount': 0})
         if not source.get('enabled'):
-            status.update(status='restricted' if source['kind'] == 'xiaohongshu' else 'unconfigured', message=source.get('disabledReason', '暂未接入'))
+            status.update(status='restricted' if source['kind'] in {'xiaohongshu', 'x'} else 'unconfigured', message=source.get('disabledReason', '暂未接入'))
             statuses.append(status)
             continue
         if processed >= max_items:
