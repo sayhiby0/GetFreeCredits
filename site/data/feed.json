@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-20T04:49:39+00:00",
-  "lastSuccessfulCollectionAt": "2026-09-20T04:49:39+00:00",
+  "generatedAt": "2026-09-20T09:01:00+00:00",
+  "lastSuccessfulCollectionAt": "2026-09-20T09:01:00+00:00",
   "items": [
     {
       "id": "8514736e9f0bb9e98afd",
@@ -570,6 +570,28 @@
       "contentHash": "05f6b916fd434eab1a5297cde4b1f8579669897f61aedfd68e9e6a941dff1684"
     },
     {
+      "id": "474738d3fe55f042c4c0",
+      "productId": "workbuddy",
+      "categories": [
+        "updates"
+      ],
+      "title": "WorkBuddy 5.6.0 版本发布",
+      "summary": [
+        "新增应用管理、会话消息引用输入及巴西葡萄牙语与印尼语界面，支持自定义MCP配置即时生效和闲置能力一键关闭。",
+        "优化对话历史加载速度、Markdown预览编辑体验、连接器管理及云端任务产物展示，提升语音输入时长与实时反馈效果。",
+        "修复企业腾讯文档预览登录异常、多轮回复空壳、自动化任务卡死、流式文本重复及跨设备同步等多项已知问题。"
+      ],
+      "url": "https://www.workbuddy.cn/docs/workbuddy/Changelog#_5-6-0-%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83-%F0%9F%9A%80-2026-09-19",
+      "sourceId": "workbuddy-updates",
+      "region": "cn",
+      "publishedAt": "2026-09-19",
+      "firstSeenAt": "2026-09-20T09:01:00+00:00",
+      "updatedAt": "2026-09-20T09:01:00+00:00",
+      "summaryMethod": "ai",
+      "benefit": null,
+      "contentHash": "b6c62d3b853cc57ad82f22ee55ecf622a39333390e9fad58a51b62a32fda31ac"
+    },
+    {
       "id": "aa53214e084a68232051",
       "productId": "qoder",
       "categories": [
@@ -843,19 +865,19 @@
       ],
       "title": "千问办公 1.1.0",
       "summary": [
-        "侧边栏支持任务、定时任务组、项目的统一拖拽、折叠与排序，会话组织更灵活。",
-        "个人技能支持发布到公开市场，可管理审核状态、更新版本、撤回或下架。",
-        "扫码创建钉钉机器人时自动匹配当前钉钉组织，无需手动切换。"
+        "千问办公1.1.0版本优化了侧边栏体验，支持任务、定时任务组及项目的统一拖拽、折叠与排序，使会话组织更灵活。同时修复了不同侧边栏分组间意外共享排序结果的问题。",
+        "个人技能功能升级，支持发布至公开市场并管理审核状态、更新版本或撤回下架。集团版不再默认预置find-skills技能，用户可按需自行安装。此外新增WorkBuddy本地数据迁移来源。",
+        "多项体验与安全修复：扫码创建钉钉机器人自动匹配当前组织；弱网及离线场景下反馈提交更可靠；修复历史图片重发为空、TIFF拦截、IM频道连接不稳定及外部链接导入安全隐患等问题。"
       ],
       "url": "https://docs.qwenwork.cn/release-notes/desktop#2026-09-18",
       "sourceId": "qwenwork-updates",
       "region": "cn",
       "publishedAt": "2026-09-18",
       "firstSeenAt": "2026-09-19T17:38:55+00:00",
-      "updatedAt": "2026-09-19T17:38:55+00:00",
-      "summaryMethod": "extractive",
+      "updatedAt": "2026-09-20T09:01:00+00:00",
+      "summaryMethod": "ai",
       "benefit": null,
-      "contentHash": "2e03ddbe966d4ddbd5a732155f6e8d78b650f5c4802f95b5ddf71d4be9abab6e"
+      "contentHash": "0b6aff796bb605878e99f925fd0f297b3483f9f82ae74a2fd4db7f2ec326c825"
     },
     {
       "id": "d290c9493fdfc6d44983",
@@ -1424,7 +1446,7 @@
       "region": "international",
       "publishedAt": "2026-08-27",
       "firstSeenAt": "2026-09-17T16:52:14+00:00",
-      "updatedAt": "2026-09-20T04:49:39+00:00",
+      "updatedAt": "2026-09-20T09:01:00+00:00",
       "summaryMethod": "extractive",
       "benefit": null,
       "contentHash": "a85a10f650f3fafaedbe8c2eb8686f3083e305eb806acbd71f9248007592a137"
@@ -1579,8 +1601,8 @@
       "name": "Qoder 国际版 · 更新日志",
       "kind": "website",
       "url": "https://docs.qoder.com/zh/release-notes/qoder",
-      "checkedAt": "2026-09-20T04:49:39+00:00",
-      "lastSuccessAt": "2026-09-20T04:49:39+00:00",
+      "checkedAt": "2026-09-20T09:01:00+00:00",
+      "lastSuccessAt": "2026-09-20T09:01:00+00:00",
       "itemCount": 12,
       "status": "ok",
       "message": "本轮检查 12 条，匹配 12 条。"
@@ -1591,8 +1613,8 @@
       "name": "Qoder 国际版 · 官方活动",
       "kind": "website",
       "url": "https://docs.qoder.com/zh/events/bogo",
-      "checkedAt": "2026-09-20T04:49:39+00:00",
-      "lastSuccessAt": "2026-09-20T04:49:39+00:00",
+      "checkedAt": "2026-09-20T09:01:00+00:00",
+      "lastSuccessAt": "2026-09-20T09:01:00+00:00",
       "itemCount": 8,
       "status": "ok",
       "message": "本轮检查 8 条，匹配 8 条。"
@@ -1603,8 +1625,8 @@
       "name": "千问办公 · 更新日志",
       "kind": "website",
       "url": "https://docs.qwenwork.cn/release-notes/desktop",
-      "checkedAt": "2026-09-20T04:49:39+00:00",
-      "lastSuccessAt": "2026-09-20T04:49:39+00:00",
+      "checkedAt": "2026-09-20T09:01:00+00:00",
+      "lastSuccessAt": "2026-09-20T09:01:00+00:00",
       "itemCount": 8,
       "status": "ok",
       "message": "本轮检查 8 条，匹配 8 条。"
@@ -1615,8 +1637,8 @@
       "name": "千问办公 · 使用指南",
       "kind": "website",
       "url": "https://qwenwork.cn/docs/getting-started/basic-workflow",
-      "checkedAt": "2026-09-20T04:49:39+00:00",
-      "lastSuccessAt": "2026-09-20T04:49:39+00:00",
+      "checkedAt": "2026-09-20T09:01:00+00:00",
+      "lastSuccessAt": "2026-09-20T09:01:00+00:00",
       "itemCount": 1,
       "status": "ok",
       "message": "本轮检查 1 条，匹配 1 条。"
@@ -1627,11 +1649,11 @@
       "name": "WorkBuddy · 更新日志",
       "kind": "website",
       "url": "https://www.workbuddy.cn/docs/workbuddy/Changelog",
-      "checkedAt": "2026-09-20T04:49:39+00:00",
-      "lastSuccessAt": "2026-09-20T04:49:39+00:00",
-      "itemCount": 14,
+      "checkedAt": "2026-09-20T09:01:00+00:00",
+      "lastSuccessAt": "2026-09-20T09:01:00+00:00",
+      "itemCount": 15,
       "status": "ok",
-      "message": "本轮检查 25 条，匹配 14 条。"
+      "message": "本轮检查 25 条，匹配 15 条。"
     },
     {
       "id": "workbuddy-guide",
@@ -1639,8 +1661,8 @@
       "name": "WorkBuddy · 快速开始",
       "kind": "website",
       "url": "https://www.workbuddy.cn/docs/workbuddy/Quickstart",
-      "checkedAt": "2026-09-20T04:49:39+00:00",
-      "lastSuccessAt": "2026-09-20T04:49:39+00:00",
+      "checkedAt": "2026-09-20T09:01:00+00:00",
+      "lastSuccessAt": "2026-09-20T09:01:00+00:00",
       "itemCount": 0,
       "status": "ok",
       "message": "本轮检查 1 条，匹配 0 条。"
@@ -1651,8 +1673,8 @@
       "name": "豆包工作 · 官方帮助中心",
       "kind": "website",
       "url": "https://www.doubao.com/work/docs/zh-cn/articles/095732655658-about-doubao-work",
-      "checkedAt": "2026-09-20T04:49:39+00:00",
-      "lastSuccessAt": "2026-09-20T04:49:39+00:00",
+      "checkedAt": "2026-09-20T09:01:00+00:00",
+      "lastSuccessAt": "2026-09-20T09:01:00+00:00",
       "itemCount": 1,
       "status": "ok",
       "message": "本轮检查 1 条，匹配 1 条。"
@@ -1663,8 +1685,8 @@
       "name": "飞书官方 · 豆包工作介绍",
       "kind": "website",
       "url": "https://www.feishu.cn/content/article/7677519271848610746",
-      "checkedAt": "2026-09-20T04:49:39+00:00",
-      "lastSuccessAt": "2026-09-20T04:49:39+00:00",
+      "checkedAt": "2026-09-20T09:01:00+00:00",
+      "lastSuccessAt": "2026-09-20T09:01:00+00:00",
       "itemCount": 1,
       "status": "ok",
       "message": "本轮检查 1 条，匹配 1 条。"
@@ -1675,8 +1697,8 @@
       "name": "千问办公 · 产品权益",
       "kind": "website",
       "url": "https://qwenwork.cn/docs/benefits",
-      "checkedAt": "2026-09-20T04:49:39+00:00",
-      "lastSuccessAt": "2026-09-20T04:49:39+00:00",
+      "checkedAt": "2026-09-20T09:01:00+00:00",
+      "lastSuccessAt": "2026-09-20T09:01:00+00:00",
       "itemCount": 1,
       "status": "ok",
       "message": "本轮检查 1 条，匹配 1 条。"
@@ -1687,8 +1709,8 @@
       "name": "千问办公 · 个人版权益",
       "kind": "website",
       "url": "https://qwenwork.cn/docs/benefits/personal",
-      "checkedAt": "2026-09-20T04:49:39+00:00",
-      "lastSuccessAt": "2026-09-20T04:49:39+00:00",
+      "checkedAt": "2026-09-20T09:01:00+00:00",
+      "lastSuccessAt": "2026-09-20T09:01:00+00:00",
       "itemCount": 1,
       "status": "ok",
       "message": "本轮检查 1 条，匹配 1 条。"
@@ -1699,8 +1721,8 @@
       "name": "千问办公 · 上线福利活动",
       "kind": "website",
       "url": "https://qwenwork.cn/docs/activity/qwen3.8-max-update",
-      "checkedAt": "2026-09-20T04:49:39+00:00",
-      "lastSuccessAt": "2026-09-20T04:49:39+00:00",
+      "checkedAt": "2026-09-20T09:01:00+00:00",
+      "lastSuccessAt": "2026-09-20T09:01:00+00:00",
       "itemCount": 1,
       "status": "ok",
       "message": "本轮检查 1 条，匹配 1 条。"
@@ -1711,8 +1733,8 @@
       "name": "Codex · GitHub 发布记录",
       "kind": "website",
       "url": "https://github.com/openai/codex/releases",
-      "checkedAt": "2026-09-20T04:49:39+00:00",
-      "lastSuccessAt": "2026-09-20T04:49:39+00:00",
+      "checkedAt": "2026-09-20T09:01:00+00:00",
+      "lastSuccessAt": "2026-09-20T09:01:00+00:00",
       "itemCount": 10,
       "status": "ok",
       "message": "本轮检查 10 条，匹配 10 条。"
@@ -1723,8 +1745,8 @@
       "name": "Claude · 官方新闻",
       "kind": "website",
       "url": "https://www.anthropic.com/news",
-      "checkedAt": "2026-09-20T04:49:39+00:00",
-      "lastSuccessAt": "2026-09-20T04:49:39+00:00",
+      "checkedAt": "2026-09-20T09:01:00+00:00",
+      "lastSuccessAt": "2026-09-20T09:01:00+00:00",
       "itemCount": 8,
       "status": "partial",
       "message": "本轮检查 10 条，匹配 8 条。部分内容未能整理，之后自动重试。"
@@ -1735,7 +1757,7 @@
       "name": "Qoder · 小红书",
       "kind": "xiaohongshu",
       "url": "https://xhslink.com/m/210eULoS2jT",
-      "checkedAt": "2026-09-20T04:49:39+00:00",
+      "checkedAt": "2026-09-20T09:01:00+00:00",
       "lastSuccessAt": null,
       "itemCount": 0,
       "status": "restricted",
@@ -1747,7 +1769,7 @@
       "name": "腾讯WorkBuddy · 小红书",
       "kind": "xiaohongshu",
       "url": "https://www.xiaohongshu.com/user/profile/69b82bc0000000003202c526",
-      "checkedAt": "2026-09-20T04:49:39+00:00",
+      "checkedAt": "2026-09-20T09:01:00+00:00",
       "lastSuccessAt": null,
       "itemCount": 0,
       "status": "restricted",
@@ -1759,7 +1781,7 @@
       "name": "豆包工作 · 小红书",
       "kind": "xiaohongshu",
       "url": "https://www.xiaohongshu.com/user/profile/6805d023000000000a03fa77",
-      "checkedAt": "2026-09-20T04:49:39+00:00",
+      "checkedAt": "2026-09-20T09:01:00+00:00",
       "lastSuccessAt": null,
       "itemCount": 0,
       "status": "restricted",
@@ -1771,7 +1793,7 @@
       "name": "千问办公 · 小红书",
       "kind": "xiaohongshu",
       "url": "https://www.xiaohongshu.com/user/profile/611dc5fd0000000001006906",
-      "checkedAt": "2026-09-20T04:49:39+00:00",
+      "checkedAt": "2026-09-20T09:01:00+00:00",
       "lastSuccessAt": null,
       "itemCount": 0,
       "status": "restricted",
@@ -1783,7 +1805,7 @@
       "name": "Qoder · 微信公众号",
       "kind": "wechat",
       "url": "https://qoder.com.cn/",
-      "checkedAt": "2026-09-20T04:49:39+00:00",
+      "checkedAt": "2026-09-20T09:01:00+00:00",
       "lastSuccessAt": null,
       "itemCount": 0,
       "status": "unconfigured",
@@ -1795,7 +1817,7 @@
       "name": "WorkBuddy · 微信公众号",
       "kind": "wechat",
       "url": "https://www.workbuddy.cn/docs/workbuddy/Contact",
-      "checkedAt": "2026-09-20T04:49:39+00:00",
+      "checkedAt": "2026-09-20T09:01:00+00:00",
       "lastSuccessAt": null,
       "itemCount": 0,
       "status": "unconfigured",
@@ -1807,7 +1829,7 @@
       "name": "千问办公 · 微信公众号",
       "kind": "wechat",
       "url": null,
-      "checkedAt": "2026-09-20T04:49:39+00:00",
+      "checkedAt": "2026-09-20T09:01:00+00:00",
       "lastSuccessAt": null,
       "itemCount": 0,
       "status": "unconfigured",
@@ -1819,7 +1841,7 @@
       "name": "豆包工作 · 微信公众号",
       "kind": "wechat",
       "url": null,
-      "checkedAt": "2026-09-20T04:49:39+00:00",
+      "checkedAt": "2026-09-20T09:01:00+00:00",
       "lastSuccessAt": null,
       "itemCount": 0,
       "status": "unconfigured",
@@ -1831,7 +1853,7 @@
       "name": "WorkBuddy · X",
       "kind": "x",
       "url": "https://x.com/WorkBuddy_AI",
-      "checkedAt": "2026-09-20T04:49:39+00:00",
+      "checkedAt": "2026-09-20T09:01:00+00:00",
       "lastSuccessAt": null,
       "itemCount": 0,
       "status": "restricted",
@@ -1843,7 +1865,7 @@
       "name": "OpenAI · X",
       "kind": "x",
       "url": "https://x.com/OpenAI",
-      "checkedAt": "2026-09-20T04:49:39+00:00",
+      "checkedAt": "2026-09-20T09:01:00+00:00",
       "lastSuccessAt": null,
       "itemCount": 0,
       "status": "restricted",
@@ -1855,7 +1877,7 @@
       "name": "Claude · X",
       "kind": "x",
       "url": "https://x.com/claudeai",
-      "checkedAt": "2026-09-20T04:49:39+00:00",
+      "checkedAt": "2026-09-20T09:01:00+00:00",
       "lastSuccessAt": null,
       "itemCount": 0,
       "status": "restricted",
@@ -1868,7 +1890,7 @@
     "budget": {
       "limitCny": 30.0,
       "guardCny": 25.0,
-      "spentCny": 0.054678,
+      "spentCny": 0.062182,
       "mode": "ai"
     }
   }
