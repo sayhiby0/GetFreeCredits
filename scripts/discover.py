@@ -1,10 +1,14 @@
-"""Deterministic discovery of new official pages via brand sitemaps.
+"""Weekly auto-publish discovery of new official pages via brand sitemaps.
 
 Fetches each configured sitemap (following sitemap indexes), filters the listed
-URLs by include/exclude patterns, and reports URLs that are neither already
-tracked in config/sources.json nor seen on a previous run. It only lists
-candidates; it never judges whether a page is worth adding and never fetches
-candidate pages. Access is anonymous and robots-respecting (reuses collect.PublicClient).
+URLs by include/exclude patterns, and for every URL that is neither already
+tracked in config/sources.json nor seen on a previous run, fetches the page,
+classifies it, builds a feed item (reusing collect.parse_article/prepare_item
+with extractive summaries so nothing costs money) and merges it straight into
+site/data/feed.json. There is no human-review step: items go live automatically.
+When a page carries no publish date and no benefit date, the item is flagged
+``pending`` so the site can show a "待确认" label. Access is anonymous and
+robots-respecting (reuses collect.PublicClient).
 """
 import argparse
 import importlib.util
@@ -33,12 +37,23 @@ AccessRestricted = collect.AccessRestricted
 canonical_url = collect.canonical_url
 read_json = collect.read_json
 atomic_json = collect.atomic_json
+parse_time = collect.parse_time
 
 MAX_CHILD_SITEMAPS = 30
 MAX_DEPTH = 3
 MAX_LOCS = 5000
-REPORT_CAP = 80
+MAX_NEW_PER_RUN = 25
 FETCH_ERRORS = (HTTPError, URLError, TimeoutError, ValueError, KeyError, TypeError, AccessRestricted, OSError)
+
+
+class ExtractiveSummarizer:
+    """Discovery never pays for AI summaries; excerpts keep the budget intact."""
+    enabled = False
+    used = False
+    attempts = 0
+
+    def summarize(self, title, lines):
+        return None
 
 
 def locs_from_soup(soup):
@@ -81,63 +96,130 @@ def evaluate(candidates, tracked, ledger, now_iso):
     """Diff candidates against tracked sources and the seen ledger.
 
     On the first run (no baseline) every candidate is recorded silently so later
-    runs only surface genuinely new URLs. Returns (new_items, ledger, first_run).
+    runs only surface genuinely new URLs; nothing is published on the baseline
+    run. On later runs, new candidates are returned without being marked seen —
+    the caller marks each one seen only after it attempts to publish it, so URLs
+    beyond the per-run cap are picked up on a following run.
+    Returns (new_items, ledger, first_run).
     """
     urls = ledger.setdefault('urls', {})
     first_run = not ledger.get('baselineAt')
-    new_items = []
-    for candidate in candidates:
-        key = candidate['url']
-        if key in tracked or key in urls:
-            continue
-        if not first_run:
-            new_items.append(candidate)
-        urls[key] = {'brand': candidate['brand'], 'seenAt': now_iso}
     if first_run:
+        for candidate in candidates:
+            urls[candidate['url']] = {'brand': candidate['brand'], 'seenAt': now_iso, 'status': 'baseline'}
         ledger['baselineAt'] = now_iso
+        ledger['lastRunAt'] = now_iso
+        return [], ledger, True
+    new_items = [c for c in candidates if c['url'] not in tracked and c['url'] not in urls]
     ledger['lastRunAt'] = now_iso
-    return new_items, ledger, first_run
+    return new_items, ledger, False
 
 
-def build_report(new_items, now_iso, first_run, candidate_count):
-    date = now_iso[:10]
+def mark_seen(ledger, candidate, now_iso, status):
+    ledger.setdefault('urls', {})[candidate['url']] = {'brand': candidate['brand'], 'seenAt': now_iso, 'status': status}
+
+
+def build_source(candidate):
+    product = candidate.get('productId') or 'unknown'
+    return {
+        'id': f'discover-{product}',
+        'productId': product,
+        'name': candidate.get('brand') or product,
+        'url': candidate['url'],
+        'parser': 'article',
+        'contentSelector': candidate.get('contentSelector', 'article,main'),
+        'titleSelector': candidate.get('titleSelector', 'h1'),
+        'region': candidate.get('region', 'unknown'),
+        'timezone': candidate.get('timezone'),
+        'categories': [],
+        'allowedHosts': candidate.get('hosts') or [urlsplit(candidate['url']).hostname],
+    }
+
+
+def is_pending(item):
+    """Flag items we cannot date: no publish date and no benefit start/end/ongoing."""
+    if item.get('publishedAt'):
+        return False
+    benefit = item.get('benefit')
+    if benefit and (benefit.get('startAt') or benefit.get('endAt') or benefit.get('ongoing')):
+        return False
+    return True
+
+
+def publish_new(new_items, ledger, feed_path, client_factory, now, now_iso, cap=MAX_NEW_PER_RUN):
+    """Fetch, classify and merge up to ``cap`` new pages into the feed. No review."""
+    summarizer = ExtractiveSummarizer()
+    feed = read_json(feed_path, {'schemaVersion': 1, 'items': [], 'sources': [], 'lastSuccessfulCollectionAt': None})
+    items = {item['id']: item for item in feed.get('items', [])}
+    published, attempted, errors = [], 0, []
+    for candidate in new_items:
+        if attempted >= cap:
+            break
+        attempted += 1
+        source = build_source(candidate)
+        try:
+            articles = collect.parse_article(client_factory(source['allowedHosts']).get(candidate['url']), source, candidate['url'])
+        except FETCH_ERRORS as error:
+            mark_seen(ledger, candidate, now_iso, f'fetch-failed:{type(error).__name__}')
+            errors.append(f"{candidate['url']}: {type(error).__name__}")
+            continue
+        if not articles:
+            mark_seen(ledger, candidate, now_iso, 'no-content')
+            continue
+        added = 0
+        for article in articles:
+            item = collect.prepare_item(article, source, None, now, summarizer)
+            if not item:
+                continue
+            item['pending'] = is_pending(item)
+            items[item['id']] = item
+            published.append(item)
+            added += 1
+        mark_seen(ledger, candidate, now_iso, 'published' if added else 'rejected')
+    if published:
+        feed['items'] = sorted(items.values(),
+                               key=lambda it: parse_time(it.get('publishedAt')) or parse_time(it['firstSeenAt']),
+                               reverse=True)
+        atomic_json(feed_path, feed)
+    return published, attempted, errors
+
+
+def build_summary(published, first_run, candidate_count, attempted, errors):
+    date = datetime.now(timezone.utc).date().isoformat()
     if first_run:
         return (f'## 发现基线已建立（{date}）\n\n'
-                f'首次运行，已记录 {candidate_count} 个候选页面作为基线，本次不产生待审阅项。'
-                f'之后每周只会报告相对基线新增的页面。\n')
-    if not new_items:
-        return f'## 本周无新增候选页面（{date}）\n\n各品牌官方 sitemap 相对上次未发现新页面。\n'
-    by_brand = {}
-    for item in new_items:
-        by_brand.setdefault(item['brand'], []).append(item['url'])
-    lines = [f'## 发现 {len(new_items)} 个候选新页面（{date}）',
-             '',
-             '> 由 GitHub Actions 每周检索各品牌官方 sitemap 自动得到，仅为线索，未判断是否值得接入。',
-             '> 人工核对后，若页面匿名可访问、robots 允许、服务端渲染且有日期正文，再手动加入 `config/sources.json`。']
-    for brand in sorted(by_brand):
-        urls = by_brand[brand]
-        lines.append(f'\n### {brand}（{len(urls)}）')
-        lines.extend(f'- {url}' for url in urls[:REPORT_CAP])
-        if len(urls) > REPORT_CAP:
-            lines.append(f'- …另有 {len(urls) - REPORT_CAP} 个，详见 `.state/discovery.json`')
+                f'首次运行，已记录 {candidate_count} 个官方页面作为基线，本次不发布内容。'
+                f'之后每周会自动把相对基线新增的页面分类并发布到网站。\n')
+    if not published:
+        note = f'，{len(errors)} 个页面读取失败已跳过' if errors else ''
+        return (f'## 本周无新增可发布页面（{date}）\n\n'
+                f'各品牌官方 sitemap 相对上次未发现可发布的新页面（尝试 {attempted} 个{note}）。\n')
+    pending = sum(1 for item in published if item.get('pending'))
+    lines = [f'## 已自动发布 {len(published)} 条新内容（{date}）', '',
+             '> 由 GitHub Actions 每周检索各品牌官方 sitemap 得到，已自动分类并合并进网站，无需人工审核。',
+             f'> 其中 {pending} 条缺少明确日期，已在网站标注「待确认」。', '']
+    for item in published:
+        flag = '（待确认）' if item.get('pending') else ''
+        lines.append(f"- {item['productId']} · {item['title']}{flag} — {item['url']}")
     return '\n'.join(lines) + '\n'
 
 
-def write_github_outputs(count, first_run, report):
+def write_github_outputs(published_count, first_run, summary):
     output_path = os.environ.get('GITHUB_OUTPUT')
     if output_path:
         with open(output_path, 'a', encoding='utf-8') as handle:
-            handle.write(f'has_new={"true" if count else "false"}\n')
-            handle.write(f'new_count={count}\n')
+            handle.write(f'published_count={published_count}\n')
+            handle.write(f'changed={"true" if published_count else "false"}\n')
+            handle.write(f'has_new={"true" if published_count else "false"}\n')
             handle.write(f'first_run={"true" if first_run else "false"}\n')
     summary_path = os.environ.get('GITHUB_STEP_SUMMARY')
     if summary_path:
         with open(summary_path, 'a', encoding='utf-8') as handle:
-            handle.write(report + '\n')
+            handle.write(summary + '\n')
 
 
 def run_discovery(config_path='config/discovery.json', sources_path='config/sources.json',
-                  state_path='.state/discovery.json', report_path='.state/discovery-report.md',
+                  state_path='.state/discovery.json', feed_path='site/data/feed.json',
                   client_factory=PublicClient, now=None):
     now = now or datetime.now(timezone.utc)
     now = now if now.tzinfo else now.replace(tzinfo=timezone.utc)
@@ -170,27 +252,33 @@ def run_discovery(config_path='config/discovery.json', sources_path='config/sour
             if candidate_url in seen_local or not url_matches(candidate_url, include, exclude):
                 continue
             seen_local.add(candidate_url)
-            candidates.append({'brand': brand, 'productId': entry.get('productId'), 'url': candidate_url})
+            candidates.append({'brand': brand, 'productId': entry.get('productId'), 'url': candidate_url,
+                               'region': entry.get('region', 'unknown'), 'timezone': entry.get('timezone'),
+                               'hosts': hosts, 'contentSelector': entry.get('contentSelector', 'article,main'),
+                               'titleSelector': entry.get('titleSelector', 'h1')})
             matched += 1
         print(f'{brand} {url}: {len(locs)} listed, {matched} matched filters')
 
     new_items, ledger, first_run = evaluate(candidates, tracked, ledger, now_iso)
+    published, attempted, errors = publish_new(new_items, ledger, feed_path, client_factory, now, now_iso)
     atomic_json(state_path, ledger)
-    report = build_report(new_items, now_iso, first_run, len(candidates))
-    report_file = Path(report_path)
-    report_file.parent.mkdir(parents=True, exist_ok=True)
-    report_file.write_text(report, encoding='utf-8')
-    write_github_outputs(len(new_items), first_run, report)
-    return {'new': new_items, 'first_run': first_run, 'candidates': len(candidates), 'skipped': skipped}
+    summary = build_summary(published, first_run, len(candidates), attempted, errors)
+    write_github_outputs(len(published), first_run, summary)
+    return {'published': published, 'attempted': attempted, 'errors': errors, 'first_run': first_run,
+            'candidates': len(candidates), 'new': len(new_items), 'skipped': skipped}
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='List new official pages from brand sitemaps without scraping or judging them.')
+    parser = argparse.ArgumentParser(description='Auto-classify and publish new official pages found in brand sitemaps.')
     parser.add_argument('--config', default='config/discovery.json')
     parser.add_argument('--sources', default='config/sources.json')
     parser.add_argument('--state', default='.state/discovery.json')
-    parser.add_argument('--report', default='.state/discovery-report.md')
+    parser.add_argument('--feed', default='site/data/feed.json')
     args = parser.parse_args()
-    result = run_discovery(args.config, args.sources, args.state, args.report)
-    status = 'baseline established' if result['first_run'] else f"{len(result['new'])} new candidate page(s)"
-    print(f'Discovery: {status}; {result["candidates"]} candidate(s) considered; skipped={result["skipped"] or "none"}')
+    result = run_discovery(args.config, args.sources, args.state, args.feed)
+    if result['first_run']:
+        status = 'baseline established'
+    else:
+        status = f"published {len(result['published'])} item(s) from {result['attempted']} new page(s)"
+    print(f'Discovery: {status}; {result["candidates"]} candidate(s) considered; '
+          f'errors={result["errors"] or "none"}; skipped={result["skipped"] or "none"}')

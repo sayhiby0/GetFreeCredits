@@ -1,4 +1,4 @@
-name: Discover new official pages
+name: Discover and publish new official pages
 
 on:
   schedule:
@@ -16,10 +16,12 @@ jobs:
   discover:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     permissions:
       contents: write
-      issues: write
+    outputs:
+      changed: ${{ steps.discover.outputs.changed }}
+      published_count: ${{ steps.discover.outputs.published_count }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -29,10 +31,12 @@ jobs:
           python-version: '3.12'
           cache: pip
       - run: python -m pip install -r requirements.txt
-      - name: Discover new pages from official sitemaps
+      - name: Run offline tests
+        run: python -m unittest discover -s tests -p 'test_*.py'
+      - name: Discover, classify and publish new pages
         id: discover
         run: python scripts/discover.py
-      - name: Persist discovery ledger
+      - name: Commit feed and discovery ledger
         if: always()
         env:
           GIT_AUTHOR_NAME: github-actions[bot]
@@ -41,16 +45,28 @@ jobs:
           GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
         run: |
           if [ -f .state/discovery.json ]; then git add .state/discovery.json; fi
+          if [ -f site/data/feed.json ]; then git add site/data/feed.json; fi
           if ! git diff --cached --quiet; then
-            git commit -m 'Update discovered-pages ledger'
+            git commit -m 'Auto-publish discovered official pages'
             git pull --rebase origin main
             git push origin HEAD:main
           fi
-      - name: Open a review issue for new candidates
-        if: steps.discover.outputs.has_new == 'true'
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh issue create \
-            --title "发现 ${{ steps.discover.outputs.new_count }} 个候选新页面 ($(date -u +%F))" \
-            --body-file .state/discovery-report.md
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.discover.outputs.changed == 'true'
+        with:
+          path: site
+
+  deploy:
+    needs: discover
+    if: needs.discover.outputs.changed == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

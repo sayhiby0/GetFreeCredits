@@ -100,6 +100,13 @@ function benefitBadge(item) {
   return node('span', `benefit-status ${status}`, BENEFIT_NAMES[status]);
 }
 
+function pendingFlag(item) {
+  if (!item.pending) return null;
+  const flag = node('span', 'pending-flag', '待确认');
+  flag.title = '这条内容来自官方页面的自动收录，暂时没有读到明确的发布日期，请以原文为准。';
+  return flag;
+}
+
 function deadline(item) {
   if (item.benefit?.endAt) return `截至 ${formatDate(item.benefit.endAt, item.benefit.endPrecision !== 'date')}${item.benefit.endPrecision !== 'date' ? '（北京时间）' : ''}`;
   if (item.benefit?.ongoing) return '原文说明长期有效';
@@ -113,6 +120,8 @@ function benefitCard(item) {
   const p = product(item.productId);
   label.append(avatar(p), node('span', '', p.name));
   top.append(label, benefitBadge(item));
+  const cardFlag = pendingFlag(item);
+  if (cardFlag) top.append(cardFlag);
   const heading = node('h3', '', item.title);
   const summary = node('p', 'benefit-card-summary', item.summary.join(' '));
   const scope = node('span', 'benefit-scope', REGION_NAMES[item.region] || REGION_NAMES.unknown);
@@ -135,6 +144,8 @@ function newsCard(item) {
     if (c) meta.append(node('span', `category-label ${id}`, c.name));
   }
   if (item.productId === 'qoder' || item.region === 'unknown') meta.append(node('span', 'region-label', REGION_NAMES[item.region] || REGION_NAMES.unknown));
+  const flag = pendingFlag(item);
+  if (flag) meta.append(flag);
   const date = node('time', 'news-date', item.publishedAt ? formatDate(item.publishedAt) : `首次发现 ${formatDate(item.firstSeenAt)}`);
   const timeValue = item.publishedAt || item.firstSeenAt;
   if (timeValue) date.dateTime = timeValue;
