@@ -4,6 +4,29 @@
   "lastSuccessfulCollectionAt": "2026-09-20T09:01:00+00:00",
   "items": [
     {
+      "id": "ba46d2690fc52f603c42",
+      "productId": "workbuddy",
+      "categories": [
+        "updates"
+      ],
+      "title": "WorkBuddy 更新日志",
+      "summary": [
+        "新增设置「应用管理」，可查看已授权的第三方应用与 Buddy 应用，并支持一键撤销授权",
+        "新增会话消息引用输入，选中他人消息即可作为上下文继续追问",
+        "新增巴西葡萄牙语与印尼语界面，切换后重启依旧保持"
+      ],
+      "url": "https://www.workbuddy.cn/docs/workbuddy/Changelog-5.6.0",
+      "sourceId": "discover-workbuddy",
+      "region": "cn",
+      "publishedAt": "2026-09-20T07:01:27.000Z",
+      "firstSeenAt": "2026-09-20T09:04:40+00:00",
+      "updatedAt": "2026-09-20T09:04:40+00:00",
+      "summaryMethod": "extractive",
+      "benefit": null,
+      "contentHash": "94fc7d265cf5581107fbf01b3594dcaa10d2cdf6ae6f56ef64388af06c73bd4b",
+      "pending": false
+    },
+    {
       "id": "8514736e9f0bb9e98afd",
       "productId": "codex",
       "categories": [
