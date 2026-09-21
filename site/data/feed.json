@@ -1,8 +1,108 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-20T09:01:00+00:00",
-  "lastSuccessfulCollectionAt": "2026-09-20T09:01:00+00:00",
+  "generatedAt": "2026-09-21T04:49:57+00:00",
+  "lastSuccessfulCollectionAt": "2026-09-21T04:49:57+00:00",
   "items": [
+    {
+      "id": "2350633a2ffe764fad12",
+      "productId": "codex",
+      "categories": [
+        "updates"
+      ],
+      "title": "0.156.0-alpha.14",
+      "summary": [
+        "发布版本号为0.156.0-alpha.14"
+      ],
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.156.0-alpha.14",
+      "sourceId": "codex-updates",
+      "region": "international",
+      "publishedAt": null,
+      "firstSeenAt": "2026-09-21T04:49:57+00:00",
+      "updatedAt": "2026-09-21T04:49:57+00:00",
+      "summaryMethod": "ai",
+      "benefit": null,
+      "contentHash": "abc50339a4a392f1e8ef545a1c7190b17e2e1546ac2d725049f854ad13be354c"
+    },
+    {
+      "id": "c7a6f92c1985f954d6e4",
+      "productId": "codex",
+      "categories": [
+        "updates"
+      ],
+      "title": "0.156.0-alpha.13",
+      "summary": [
+        "发布版本号为0.156.0-alpha.13"
+      ],
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.156.0-alpha.13",
+      "sourceId": "codex-updates",
+      "region": "international",
+      "publishedAt": null,
+      "firstSeenAt": "2026-09-21T04:49:57+00:00",
+      "updatedAt": "2026-09-21T04:49:57+00:00",
+      "summaryMethod": "ai",
+      "benefit": null,
+      "contentHash": "74f7a1783880d8a4cd948561962a72ae891b7dd8d7cbc3158491f6681317b6b9"
+    },
+    {
+      "id": "167e557afbde2c0ad252",
+      "productId": "codex",
+      "categories": [
+        "updates"
+      ],
+      "title": "0.156.0-alpha.12",
+      "summary": [
+        "发布版本号为0.156.0-alpha.12"
+      ],
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.156.0-alpha.12",
+      "sourceId": "codex-updates",
+      "region": "international",
+      "publishedAt": null,
+      "firstSeenAt": "2026-09-21T04:49:57+00:00",
+      "updatedAt": "2026-09-21T04:49:57+00:00",
+      "summaryMethod": "ai",
+      "benefit": null,
+      "contentHash": "8fd160f2f43a85907549e0e7bfc4c843c1b960be7ec25e3c74ee589a1358759f"
+    },
+    {
+      "id": "66b1e7f4e93dbac4dba1",
+      "productId": "codex",
+      "categories": [
+        "updates"
+      ],
+      "title": "0.156.0-alpha.11",
+      "summary": [
+        "发布了版本0.156.0-alpha.11"
+      ],
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.156.0-alpha.11",
+      "sourceId": "codex-updates",
+      "region": "international",
+      "publishedAt": null,
+      "firstSeenAt": "2026-09-21T04:49:57+00:00",
+      "updatedAt": "2026-09-21T04:49:57+00:00",
+      "summaryMethod": "ai",
+      "benefit": null,
+      "contentHash": "7cda2a0886c4115efccc2e9f23f42fe8a328342ff42641d94f05a1be3eaff1a6"
+    },
+    {
+      "id": "f59542dc678a3c049e49",
+      "productId": "codex",
+      "categories": [
+        "updates"
+      ],
+      "title": "0.156.0-alpha.10",
+      "summary": [
+        "发布了版本 0.156.0-alpha.10"
+      ],
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.156.0-alpha.10",
+      "sourceId": "codex-updates",
+      "region": "international",
+      "publishedAt": null,
+      "firstSeenAt": "2026-09-21T04:49:57+00:00",
+      "updatedAt": "2026-09-21T04:49:57+00:00",
+      "summaryMethod": "ai",
+      "benefit": null,
+      "contentHash": "fce793085e2de2ff96da21659eacff1a99032fe570f8b79d92c1b7e1c138417d"
+    },
     {
       "id": "ba46d2690fc52f603c42",
       "productId": "workbuddy",
@@ -655,30 +755,30 @@
       ],
       "title": "SOTA 模型限时免费体验",
       "summary": [
-        "活动时间 ：2026 年 9 月 15 日 12:00 至 9 月 20 日 12:00。",
-        "适用用户 ：Qoder 个人订阅 及 企业订阅 用户，在活动期间处于付费状态均可以领取。",
-        "活动内容 ：每天可领取一份 SOTA 模型专属资源包，可用于 Sonus 模型。"
+        "Qoder 于2026年9月15日至25日分两轮开展SOTA模型限时免费体验活动，个人及企业付费订阅用户可参与。活动期间每天可领取一份专属资源包用于Sonus模型，每日需单独领取且每轮限领一次，错过不补也不累计。",
+        "支持Qoder、IDE、CLI及JetBrains插件客户端。用户登录付费账号后，通过各客户端用量面板或CLI命令/claim领取权益，选择Sonus模型即可使用资源包内Credits。",
+        "资源包仅限领取账号使用，不可转让或兑换现金。若存在异常注册或使用行为，Qoder有权取消资格并收回权益。未使用的Credits不结转，逾期自动失效，官方保留调整或终止活动的权利。"
       ],
       "url": "https://docs.qoder.com/zh/events/sotafree",
       "sourceId": "qoder-events",
       "region": "international",
       "publishedAt": null,
       "firstSeenAt": "2026-09-17T16:52:14+00:00",
-      "updatedAt": "2026-09-17T17:08:15+00:00",
-      "summaryMethod": "extractive",
+      "updatedAt": "2026-09-21T04:49:57+00:00",
+      "summaryMethod": "ai",
       "benefit": {
-        "startAt": "2026-09-15T12:00:00+08:00",
-        "endAt": "2026-09-20T12:00:00+08:00",
-        "deadlineText": "活动时间 ：2026 年 9 月 15 日 12:00 至 9 月 20 日 12:00。",
+        "startAt": null,
+        "endAt": null,
+        "deadlineText": "活动时间 ：2026 年 9 月 15 日 12:00 至 9 月 20 日 12:00 与 2026 年 9 月 21 日 12:00 至 9 月 25 日 12:30",
         "ongoing": false,
         "eligibility": "适用用户 ：Qoder 个人订阅 及 企业订阅 用户，在活动期间处于付费状态均可以领取。",
         "howToClaim": "查看官方原文",
         "limited": false,
-        "startPrecision": "minute",
-        "endPrecision": "minute",
-        "timezone": "Asia/Singapore"
+        "startPrecision": null,
+        "endPrecision": null,
+        "timezone": null
       },
-      "contentHash": "6502c39976ec52a1c01ec823514eede3c4bff0b201c14dbe99741f71fcdbdef5"
+      "contentHash": "12e7d8e78102625cf33fd89a5fdd3061d7ee8ddc49e3513b86d5c0d7fd4e5fa6"
     },
     {
       "id": "d196f5c4c01404b61446",
@@ -1460,17 +1560,17 @@
       ],
       "title": "Qoder 0.1.0",
       "summary": [
-        "SOTA 模型与多模型策略 ：内置全球顶尖模型，不绑定单一模型。你可以按任务自主选择，也可以交给 Auto 智能调度引擎，在效果、速度和成本之间自动匹配更合适的模型。",
-        "Harness，把“想得到”变成“做得到” ：Qoder 的 Harness 支持规划、执行、验证与纠错的持续循环。面对长任务和复杂任务，它能记住上下文、根据真实结果调整策略，必要时重试或回滚，并通过分级权限与工具白名单守住安全边界。",
-        "在真实任务环境里，把事情做完 ：智能体的工作环境不局限于对话框和代码工程。通过 Browser Use 和 Computer Use 能力，Qoder 可以像你一样操作网页与桌面应用，让智能体在真实环境里把事情做完。"
+        "Qoder 0.1.0 内置全球顶尖模型，支持按任务自主选择或交由 Auto 智能调度引擎自动匹配，在效果、速度和成本间取得平衡。",
+        "Harness 功能通过规划、执行、验证与纠错的持续循环处理长复杂任务，具备上下文记忆、策略调整及重试回滚能力，并通过分级权限保障安全。",
+        "Qoder 具备 Browser Use 和 Computer Use 能力，可操作网页与桌面应用；原生集成大量插件、技能及连接器，对接代码托管、数据库等业务系统。"
       ],
       "url": "https://docs.qoder.com/zh/release-notes/qoder#2026-08-27",
       "sourceId": "qoder-updates",
       "region": "international",
       "publishedAt": "2026-08-27",
       "firstSeenAt": "2026-09-17T16:52:14+00:00",
-      "updatedAt": "2026-09-20T09:01:00+00:00",
-      "summaryMethod": "extractive",
+      "updatedAt": "2026-09-21T04:49:57+00:00",
+      "summaryMethod": "ai",
       "benefit": null,
       "contentHash": "a85a10f650f3fafaedbe8c2eb8686f3083e305eb806acbd71f9248007592a137"
     },
@@ -1624,8 +1724,8 @@
       "name": "Qoder 国际版 · 更新日志",
       "kind": "website",
       "url": "https://docs.qoder.com/zh/release-notes/qoder",
-      "checkedAt": "2026-09-20T09:01:00+00:00",
-      "lastSuccessAt": "2026-09-20T09:01:00+00:00",
+      "checkedAt": "2026-09-21T04:49:57+00:00",
+      "lastSuccessAt": "2026-09-21T04:49:57+00:00",
       "itemCount": 12,
       "status": "ok",
       "message": "本轮检查 12 条，匹配 12 条。"
@@ -1636,8 +1736,8 @@
       "name": "Qoder 国际版 · 官方活动",
       "kind": "website",
       "url": "https://docs.qoder.com/zh/events/bogo",
-      "checkedAt": "2026-09-20T09:01:00+00:00",
-      "lastSuccessAt": "2026-09-20T09:01:00+00:00",
+      "checkedAt": "2026-09-21T04:49:57+00:00",
+      "lastSuccessAt": "2026-09-21T04:49:57+00:00",
       "itemCount": 8,
       "status": "ok",
       "message": "本轮检查 8 条，匹配 8 条。"
@@ -1648,8 +1748,8 @@
       "name": "千问办公 · 更新日志",
       "kind": "website",
       "url": "https://docs.qwenwork.cn/release-notes/desktop",
-      "checkedAt": "2026-09-20T09:01:00+00:00",
-      "lastSuccessAt": "2026-09-20T09:01:00+00:00",
+      "checkedAt": "2026-09-21T04:49:57+00:00",
+      "lastSuccessAt": "2026-09-21T04:49:57+00:00",
       "itemCount": 8,
       "status": "ok",
       "message": "本轮检查 8 条，匹配 8 条。"
@@ -1660,8 +1760,8 @@
       "name": "千问办公 · 使用指南",
       "kind": "website",
       "url": "https://qwenwork.cn/docs/getting-started/basic-workflow",
-      "checkedAt": "2026-09-20T09:01:00+00:00",
-      "lastSuccessAt": "2026-09-20T09:01:00+00:00",
+      "checkedAt": "2026-09-21T04:49:57+00:00",
+      "lastSuccessAt": "2026-09-21T04:49:57+00:00",
       "itemCount": 1,
       "status": "ok",
       "message": "本轮检查 1 条，匹配 1 条。"
@@ -1672,8 +1772,8 @@
       "name": "WorkBuddy · 更新日志",
       "kind": "website",
       "url": "https://www.workbuddy.cn/docs/workbuddy/Changelog",
-      "checkedAt": "2026-09-20T09:01:00+00:00",
-      "lastSuccessAt": "2026-09-20T09:01:00+00:00",
+      "checkedAt": "2026-09-21T04:49:57+00:00",
+      "lastSuccessAt": "2026-09-21T04:49:57+00:00",
       "itemCount": 15,
       "status": "ok",
       "message": "本轮检查 25 条，匹配 15 条。"
@@ -1684,8 +1784,8 @@
       "name": "WorkBuddy · 快速开始",
       "kind": "website",
       "url": "https://www.workbuddy.cn/docs/workbuddy/Quickstart",
-      "checkedAt": "2026-09-20T09:01:00+00:00",
-      "lastSuccessAt": "2026-09-20T09:01:00+00:00",
+      "checkedAt": "2026-09-21T04:49:57+00:00",
+      "lastSuccessAt": "2026-09-21T04:49:57+00:00",
       "itemCount": 0,
       "status": "ok",
       "message": "本轮检查 1 条，匹配 0 条。"
@@ -1696,8 +1796,8 @@
       "name": "豆包工作 · 官方帮助中心",
       "kind": "website",
       "url": "https://www.doubao.com/work/docs/zh-cn/articles/095732655658-about-doubao-work",
-      "checkedAt": "2026-09-20T09:01:00+00:00",
-      "lastSuccessAt": "2026-09-20T09:01:00+00:00",
+      "checkedAt": "2026-09-21T04:49:57+00:00",
+      "lastSuccessAt": "2026-09-21T04:49:57+00:00",
       "itemCount": 1,
       "status": "ok",
       "message": "本轮检查 1 条，匹配 1 条。"
@@ -1708,8 +1808,8 @@
       "name": "飞书官方 · 豆包工作介绍",
       "kind": "website",
       "url": "https://www.feishu.cn/content/article/7677519271848610746",
-      "checkedAt": "2026-09-20T09:01:00+00:00",
-      "lastSuccessAt": "2026-09-20T09:01:00+00:00",
+      "checkedAt": "2026-09-21T04:49:57+00:00",
+      "lastSuccessAt": "2026-09-21T04:49:57+00:00",
       "itemCount": 1,
       "status": "ok",
       "message": "本轮检查 1 条，匹配 1 条。"
@@ -1720,8 +1820,8 @@
       "name": "千问办公 · 产品权益",
       "kind": "website",
       "url": "https://qwenwork.cn/docs/benefits",
-      "checkedAt": "2026-09-20T09:01:00+00:00",
-      "lastSuccessAt": "2026-09-20T09:01:00+00:00",
+      "checkedAt": "2026-09-21T04:49:57+00:00",
+      "lastSuccessAt": "2026-09-21T04:49:57+00:00",
       "itemCount": 1,
       "status": "ok",
       "message": "本轮检查 1 条，匹配 1 条。"
@@ -1732,8 +1832,8 @@
       "name": "千问办公 · 个人版权益",
       "kind": "website",
       "url": "https://qwenwork.cn/docs/benefits/personal",
-      "checkedAt": "2026-09-20T09:01:00+00:00",
-      "lastSuccessAt": "2026-09-20T09:01:00+00:00",
+      "checkedAt": "2026-09-21T04:49:57+00:00",
+      "lastSuccessAt": "2026-09-21T04:49:57+00:00",
       "itemCount": 1,
       "status": "ok",
       "message": "本轮检查 1 条，匹配 1 条。"
@@ -1744,8 +1844,8 @@
       "name": "千问办公 · 上线福利活动",
       "kind": "website",
       "url": "https://qwenwork.cn/docs/activity/qwen3.8-max-update",
-      "checkedAt": "2026-09-20T09:01:00+00:00",
-      "lastSuccessAt": "2026-09-20T09:01:00+00:00",
+      "checkedAt": "2026-09-21T04:49:57+00:00",
+      "lastSuccessAt": "2026-09-21T04:49:57+00:00",
       "itemCount": 1,
       "status": "ok",
       "message": "本轮检查 1 条，匹配 1 条。"
@@ -1756,8 +1856,8 @@
       "name": "Codex · GitHub 发布记录",
       "kind": "website",
       "url": "https://github.com/openai/codex/releases",
-      "checkedAt": "2026-09-20T09:01:00+00:00",
-      "lastSuccessAt": "2026-09-20T09:01:00+00:00",
+      "checkedAt": "2026-09-21T04:49:57+00:00",
+      "lastSuccessAt": "2026-09-21T04:49:57+00:00",
       "itemCount": 10,
       "status": "ok",
       "message": "本轮检查 10 条，匹配 10 条。"
@@ -1768,8 +1868,8 @@
       "name": "Claude · 官方新闻",
       "kind": "website",
       "url": "https://www.anthropic.com/news",
-      "checkedAt": "2026-09-20T09:01:00+00:00",
-      "lastSuccessAt": "2026-09-20T09:01:00+00:00",
+      "checkedAt": "2026-09-21T04:49:57+00:00",
+      "lastSuccessAt": "2026-09-21T04:49:57+00:00",
       "itemCount": 8,
       "status": "partial",
       "message": "本轮检查 10 条，匹配 8 条。部分内容未能整理，之后自动重试。"
@@ -1780,7 +1880,7 @@
       "name": "Qoder · 小红书",
       "kind": "xiaohongshu",
       "url": "https://xhslink.com/m/210eULoS2jT",
-      "checkedAt": "2026-09-20T09:01:00+00:00",
+      "checkedAt": "2026-09-21T04:49:57+00:00",
       "lastSuccessAt": null,
       "itemCount": 0,
       "status": "restricted",
@@ -1792,7 +1892,7 @@
       "name": "腾讯WorkBuddy · 小红书",
       "kind": "xiaohongshu",
       "url": "https://www.xiaohongshu.com/user/profile/69b82bc0000000003202c526",
-      "checkedAt": "2026-09-20T09:01:00+00:00",
+      "checkedAt": "2026-09-21T04:49:57+00:00",
       "lastSuccessAt": null,
       "itemCount": 0,
       "status": "restricted",
@@ -1804,7 +1904,7 @@
       "name": "豆包工作 · 小红书",
       "kind": "xiaohongshu",
       "url": "https://www.xiaohongshu.com/user/profile/6805d023000000000a03fa77",
-      "checkedAt": "2026-09-20T09:01:00+00:00",
+      "checkedAt": "2026-09-21T04:49:57+00:00",
       "lastSuccessAt": null,
       "itemCount": 0,
       "status": "restricted",
@@ -1816,7 +1916,7 @@
       "name": "千问办公 · 小红书",
       "kind": "xiaohongshu",
       "url": "https://www.xiaohongshu.com/user/profile/611dc5fd0000000001006906",
-      "checkedAt": "2026-09-20T09:01:00+00:00",
+      "checkedAt": "2026-09-21T04:49:57+00:00",
       "lastSuccessAt": null,
       "itemCount": 0,
       "status": "restricted",
@@ -1828,7 +1928,7 @@
       "name": "Qoder · 微信公众号",
       "kind": "wechat",
       "url": "https://qoder.com.cn/",
-      "checkedAt": "2026-09-20T09:01:00+00:00",
+      "checkedAt": "2026-09-21T04:49:57+00:00",
       "lastSuccessAt": null,
       "itemCount": 0,
       "status": "unconfigured",
@@ -1840,7 +1940,7 @@
       "name": "WorkBuddy · 微信公众号",
       "kind": "wechat",
       "url": "https://www.workbuddy.cn/docs/workbuddy/Contact",
-      "checkedAt": "2026-09-20T09:01:00+00:00",
+      "checkedAt": "2026-09-21T04:49:57+00:00",
       "lastSuccessAt": null,
       "itemCount": 0,
       "status": "unconfigured",
@@ -1852,7 +1952,7 @@
       "name": "千问办公 · 微信公众号",
       "kind": "wechat",
       "url": null,
-      "checkedAt": "2026-09-20T09:01:00+00:00",
+      "checkedAt": "2026-09-21T04:49:57+00:00",
       "lastSuccessAt": null,
       "itemCount": 0,
       "status": "unconfigured",
@@ -1864,7 +1964,7 @@
       "name": "豆包工作 · 微信公众号",
       "kind": "wechat",
       "url": null,
-      "checkedAt": "2026-09-20T09:01:00+00:00",
+      "checkedAt": "2026-09-21T04:49:57+00:00",
       "lastSuccessAt": null,
       "itemCount": 0,
       "status": "unconfigured",
@@ -1876,7 +1976,7 @@
       "name": "WorkBuddy · X",
       "kind": "x",
       "url": "https://x.com/WorkBuddy_AI",
-      "checkedAt": "2026-09-20T09:01:00+00:00",
+      "checkedAt": "2026-09-21T04:49:57+00:00",
       "lastSuccessAt": null,
       "itemCount": 0,
       "status": "restricted",
@@ -1888,7 +1988,7 @@
       "name": "OpenAI · X",
       "kind": "x",
       "url": "https://x.com/OpenAI",
-      "checkedAt": "2026-09-20T09:01:00+00:00",
+      "checkedAt": "2026-09-21T04:49:57+00:00",
       "lastSuccessAt": null,
       "itemCount": 0,
       "status": "restricted",
@@ -1900,7 +2000,7 @@
       "name": "Claude · X",
       "kind": "x",
       "url": "https://x.com/claudeai",
-      "checkedAt": "2026-09-20T09:01:00+00:00",
+      "checkedAt": "2026-09-21T04:49:57+00:00",
       "lastSuccessAt": null,
       "itemCount": 0,
       "status": "restricted",
@@ -1908,12 +2008,12 @@
     }
   ],
   "run": {
-    "newCount": 1,
+    "newCount": 5,
     "updatedCount": 3,
     "budget": {
       "limitCny": 30.0,
       "guardCny": 25.0,
-      "spentCny": 0.062182,
+      "spentCny": 0.072095,
       "mode": "ai"
     }
   }
